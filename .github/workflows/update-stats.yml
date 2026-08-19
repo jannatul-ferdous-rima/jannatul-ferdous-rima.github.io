@@ -31,7 +31,7 @@ jobs:
 
       # Bước 4: Tự động commit và đẩy các thay đổi (nếu có)
       - name: Commit and push changes
-        uses: stefanzweifel/git-auto-commit-action@v4
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: 'chore: Tự động cập nhật số liệu thống kê GitHub'
           file_pattern: 'github_stats.json' # Chỉ commit nếu tệp này thay đổi
