@@ -1,0 +1,225 @@
+/* ====================================================== */
+/* --- PROGRESS BAR & HEADER --- */
+/* ====================================================== */
+.scroll-progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    /* background: linear-gradient(to right, var(--gradient-purple), var(--gradient-pink)); */
+    background: linear-gradient(to right, #009000, #39FF14);
+    width: 0%;
+    z-index: 1000;
+    transition: width 0.1s linear;
+}
+
+.main-header {
+    position: fixed;
+    top: 1.5rem;
+    left: 50%;
+    z-index: 999;
+
+    width: 90%;
+    max-width: 1400px;
+
+    background: rgba(24, 24, 27, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border-color);
+    border-radius: 9999px;
+    padding: 0.75rem 2rem;
+    display: flex;
+    align-items: center;
+
+    /* === ALIGN DISTANCE === */
+    justify-content: space-between;
+    /* Use space-between to separate the Logo and Nav on both sides */
+
+    gap: 1rem;
+    opacity: 0;
+    transform: translate(-50%, -100px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* === CHANGE LOGO TO NEW DESIGN === */
+.logo {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: var(--gradient-green);
+    /* Gradient color transfer to part of the name */
+    background: linear-gradient(to right, #0BDA51, var(--gradient-green));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* === ADD THIS BLOCK === */
+.header-logo-group {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+
+
+@keyframes pulse-star {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.2); opacity: 0.8; }
+}
+
+/* Other styles for .main-nav, .resume-button... remain the same */
+
+
+.main-header.visible {
+    opacity: 1;
+    transform: translateX(-50%);
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.25rem;    /* font size for the name in the header */
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+.logo span {
+    background: linear-gradient(to right, #009000, #39FF14);
+    padding: 0.5rem 1rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-nav {
+    position: relative;
+}
+
+.main-nav a {
+    position: relative;
+    z-index: 1;
+    /* Make sure the link is always on the indicator */
+    padding: 0.5rem 1rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover {
+    color: var(--gradient-green);
+}
+
+.main-nav a.is-active {
+    /* Add a class to highlight text when active */
+    color: var(--text-primary);
+}
+
+/* Style for active line to move */
+.nav-indicator {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* JS will update this value */
+    height: 100%;
+    background-color: rgba(0, 247, 255, 0.1);
+    border-radius: 9999px;
+    z-index: 0;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    /* Smooth effect */
+    opacity: 0;
+    /* Initially hidden */
+}
+
+.resume-button {
+    background: var(--resume-button-bg);
+    color: #121212;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition: transform 0.2s;
+    list-style: none;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.resume-button::-webkit-details-marker {
+    display: none;
+}
+
+.resume-button i {
+    margin-left: 0.35rem;
+    font-size: 0.7em;
+    transition: transform 0.2s ease;
+}
+
+.resume-menu[open] .resume-button i {
+    transform: rotate(180deg);
+}
+
+.resume-menu {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.resume-menu-action > summary {
+    list-style: none;
+    cursor: pointer;
+}
+
+.resume-menu-action > summary::-webkit-details-marker {
+    display: none;
+}
+
+.resume-menu-action > summary i {
+    transition: transform 0.2s ease;
+}
+
+.resume-menu-action[open] > summary i {
+    transform: rotate(180deg);
+}
+
+.resume-menu-action--full > summary {
+    width: 100%;
+}
+
+.resume-dropdown {
+    position: absolute;
+    top: calc(100% + 0.6rem);
+    right: 0;
+    z-index: 1001;
+    min-width: 9rem;
+    padding: 0.4rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.75rem;
+    background: rgba(24, 24, 27, 0.97);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(12px);
+}
+
+.resume-dropdown a {
+    display: block;
+    padding: 0.65rem 0.8rem;
+    border-radius: 0.45rem;
+    color: var(--text-primary);
+    font-size: 0.875rem;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.resume-dropdown a:hover,
+.resume-dropdown a:focus-visible {
+    color: var(--gradient-green);
+    background: rgba(255, 255, 255, 0.08);
+    outline: none;
+}
+
+.resume-button:hover {
+    transform: scale(1.05);
+    color: #121212;
+}

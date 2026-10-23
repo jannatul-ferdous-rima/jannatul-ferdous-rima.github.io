@@ -1,0 +1,357 @@
+/* ====================================================== */
+/* --- PROJECTS & WORKS SECTION --- */
+/* ====================================================== */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* REPLACE THIS ENTIRE BLOCK */
+.project-image-container {
+    /* Black background for the "border" */
+    background-color: #000000;
+    border-bottom: 1px solid var(--border-color);
+    /* Create space around the image. */
+    padding: 0.3rem;
+    /* Maintain the ratio for the container. */
+    aspect-ratio: 16 / 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* AND THIS BLOCK */
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensure the image does not get distorted */
+    border-radius: 0.5rem;
+    /* Round the corners of the image */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    /* Add a shadow for a nice effect */
+    transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-image {
+    transform: scale(1.03);
+    /* Hiệu ứng zoom nhỏ hơn một chút cho tinh tế */
+}
+
+.project-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-content p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    flex-grow: 1;
+    margin-bottom: 1rem;
+}
+
+.project-role {
+    font-style: italic;
+    font-size: 0.85rem;
+}
+
+.project-role strong {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.project-tags span {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+}
+
+.project-links {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    color: white;
+}
+
+.btn-project-link {
+    text-decoration: none;
+    color: var(--text-secondary);
+    transition: color 0.2s;
+}
+
+.btn-project-link:hover {
+    color: var(--text-primary);
+}
+
+.btn-project-demo {
+    margin-left: auto;
+    background: linear-gradient(to right, var(--gradient-purple), var(--gradient-pink));
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+/* ====================================================== */
+/* --- RESEARCH CARDS (home page glimpse, Oct 2026) --- */
+/* ====================================================== */
+.research-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.research-level-title {
+    margin: 2.5rem 0 1.25rem;
+    color: var(--text-primary);
+    font-size: 1.45rem;
+    font-weight: 700;
+    padding: 0.65rem 0.9rem;
+    border-left: 3px solid var(--gradient-green);
+    border-radius: 0.4rem;
+    background: rgba(74, 222, 128, 0.06);
+}
+
+.research-level-title span {
+    margin-left: 0.5rem;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.research-sublevel-title {
+    margin: 1.75rem 0 1rem;
+    color: var(--text-primary);
+    font-size: 1.05rem;
+    font-weight: 650;
+}
+
+.research-sublevel-title span {
+    margin-left: 0.4rem;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+.ongoing-section-title {
+    margin-top: 3rem;
+}
+
+.ongoing-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+}
+
+.ongoing-project-card {
+    padding: 1.25rem;
+    border-top: 2px solid var(--gradient-green);
+}
+
+.ongoing-project-role {
+    margin: 0 0 0.45rem;
+    color: var(--gradient-green);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+}
+
+.ongoing-project-card h4 {
+    margin: 0 0 0.5rem;
+    color: var(--text-primary);
+    font-size: 1rem;
+}
+
+.ongoing-project-card > p:last-child {
+    margin: 0;
+    color: #d4d4d8;
+    font-size: 0.88rem;
+    line-height: 1.5;
+}
+
+.research-card {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    overflow: hidden;
+    color: var(--text-primary);
+    text-decoration: none;
+    border-top: 3px solid var(--gradient-green);
+}
+
+.research-card:hover {
+    color: var(--text-primary);
+    border-color: var(--gradient-green);
+}
+
+.research-card-media {
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.research-card-media img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.research-card-media.fit-cover img {
+    object-fit: cover;
+}
+
+.research-card-media.fit-contain img {
+    object-fit: contain;
+    padding: 0.5rem;
+}
+
+.research-card:hover .research-card-media img {
+    transform: scale(1.04);
+}
+
+.research-card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1.25rem 1.25rem 1.4rem;
+}
+
+.research-card-category {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-secondary);
+    margin-bottom: 0.4rem;
+}
+
+.research-card-status {
+    align-self: flex-start;
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #e879f9;
+    background: rgba(232, 121, 249, 0.11);
+    border: 1px solid rgba(232, 121, 249, 0.36);
+    border-radius: 9999px;
+    padding: 0.25rem 0.65rem;
+    margin-bottom: 0.65rem;
+}
+
+.research-card h3 {
+    font-size: 1.15rem;
+    line-height: 1.3;
+    margin-bottom: 0.6rem;
+}
+
+.research-card-hook {
+    font-size: 0.92rem;
+    color: #d4d4d8;
+    line-height: 1.55;
+    margin-bottom: 0.9rem;
+}
+
+.research-card-result {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--gradient-green);
+    background: rgba(74, 222, 128, 0.1);
+    border: 1px solid rgba(74, 222, 128, 0.35);
+    border-radius: 0.5rem;
+    padding: 0.45rem 0.7rem;
+    margin-bottom: 0.9rem;
+    align-self: flex-start;
+}
+
+.research-card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.research-card-tags span {
+    font-size: 0.72rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 9999px;
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+}
+
+.research-card-link {
+    margin-top: auto;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--gradient-green);
+}
+
+.project-status {
+    cursor: default;
+}
+
+@media (max-width: 1100px) {
+    .research-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 640px) {
+    .research-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .ongoing-projects-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+/* Center the last row of cards and the "see more" button */
+.research-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.research-grid .research-card {
+    width: calc((100% - 3rem) / 3);
+}
+
+.view-all-posts-container {
+    text-align: center;
+}
+
+@media (max-width: 1100px) {
+    .research-grid .research-card {
+        width: calc((100% - 1.5rem) / 2);
+    }
+}
+
+@media (max-width: 640px) {
+    .research-grid .research-card {
+        width: 100%;
+    }
+}

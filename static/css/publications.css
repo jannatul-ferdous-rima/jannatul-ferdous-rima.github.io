@@ -1,0 +1,240 @@
+/* ====================================================== */
+/* --- PUBLICATIONS, TALKS & AWARDS (Oct 2026) --- */
+/* ====================================================== */
+#publications .container {
+    max-width: 1200px;
+}
+
+.pub-col-title {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 1.3rem;
+    margin-bottom: 1.1rem;
+}
+
+.pub-col-title i {
+    color: var(--gradient-green);
+}
+
+.pub-col-title--spaced {
+    margin-top: 2rem;
+}
+
+.pub-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.pub-card {
+    display: grid;
+    grid-template-columns: 4.5rem minmax(0, 1fr);
+    gap: 1.25rem;
+    padding: 1.4rem 1.5rem;
+    border-left: 3px solid var(--gradient-green);
+}
+
+.pub-card:hover {
+    transform: none;
+}
+
+.pub-year {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--gradient-green);
+    line-height: 1.2;
+}
+
+.pub-tags {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.pub-badge {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 0.2rem 0.6rem;
+    border-radius: 9999px;
+}
+
+.pub-badge--pub {
+    background: rgba(74, 222, 128, 0.15);
+    color: var(--gradient-green);
+    border: 1px solid rgba(74, 222, 128, 0.5);
+}
+
+.pub-badge--review {
+    background: rgba(250, 204, 21, 0.12);
+    color: #fde68a;
+    border: 1px solid rgba(250, 204, 21, 0.45);
+}
+
+.pub-role {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.pub-card h3 {
+    font-size: 1.08rem;
+    line-height: 1.4;
+    margin-bottom: 0.4rem;
+}
+
+.pub-authors {
+    font-size: 0.92rem;
+    color: #d4d4d8;
+}
+
+.pub-authors strong {
+    color: #fff;
+}
+
+.pub-journal {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.6rem;
+}
+
+.pub-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.25rem;
+}
+
+.pub-links a,
+.pub-scholar a {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--gradient-green);
+}
+
+.pub-scholar {
+    margin: 1rem 0 3rem;
+}
+
+.pub-columns {
+    display: grid;
+    grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+    gap: 1.5rem;
+    align-items: start;
+}
+
+.pub-panel {
+    padding: 1.6rem;
+}
+
+.pub-panel:hover {
+    transform: none;
+}
+
+.talk-group + .talk-group {
+    margin-top: 1.4rem;
+}
+
+.talk-group h4 {
+    font-size: 0.95rem;
+    line-height: 1.45;
+    color: #fff;
+    margin-bottom: 0.6rem;
+}
+
+.talk-list,
+.award-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.talk-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 0.45rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.talk-list li:last-child {
+    border-bottom: none;
+}
+
+.talk-type {
+    flex: 0 0 auto;
+    min-width: 3.6rem;
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.4rem;
+    margin-top: 0.15rem;
+}
+
+.talk-type--oral {
+    background: rgba(74, 222, 128, 0.15);
+    color: var(--gradient-green);
+}
+
+.talk-type--poster {
+    background: rgba(255, 255, 255, 0.07);
+    color: #d4d4d8;
+}
+
+.talk-event {
+    font-size: 0.9rem;
+    line-height: 1.45;
+    color: #e4e4e7;
+}
+
+.talk-event small,
+.award-list small {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.award-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.85rem;
+    padding: 0.55rem 0;
+}
+
+.award-list i {
+    flex: 0 0 auto;
+    width: 2rem;
+    height: 2rem;
+    display: grid;
+    place-items: center;
+    border-radius: 0.5rem;
+    background: rgba(74, 222, 128, 0.12);
+    color: var(--gradient-green);
+}
+
+.award-list strong {
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+@media (max-width: 900px) {
+    .pub-columns {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .pub-card {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 0.4rem;
+    }
+
+    .pub-year {
+        font-size: 1.15rem;
+    }
+}

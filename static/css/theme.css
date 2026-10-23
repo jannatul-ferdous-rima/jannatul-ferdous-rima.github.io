@@ -1,0 +1,213 @@
+/* ====================================================== */
+/*--- ADDITION: LIGHT/DARK MODE & THEME SWITCH BUTTON ---
+/* ====================================================== */
+
+/* Homepage accent palette */
+body.home-page {
+    --gradient-green: #e879f9;
+    --gradient-purple: #c026d3;
+    --gradient-pink: #f0abfc;
+    --resume-button-bg: linear-gradient(110deg, #a855f7, #e879f9);
+}
+
+body.home-page .scroll-progress-bar,
+body.home-page .logo span,
+body.home-page .title-underline,
+body.home-page .gradient-text {
+    background: linear-gradient(110deg, #a855f7, #e879f9 55%, #f0abfc);
+}
+
+body.home-page .gradient-text {
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+body.home-page .logo span {
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+body.home-page .logo {
+    background: linear-gradient(110deg, #a855f7, #e879f9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+body.home-page .tech-card-head i {
+    background: rgba(232, 121, 249, 0.12);
+}
+
+body.home-page .tech-chips span.core {
+    border-color: rgba(232, 121, 249, 0.6);
+    background: rgba(232, 121, 249, 0.1);
+}
+
+body.home-page .project-paper-link {
+    border-color: #e879f9;
+    color: #e879f9;
+}
+
+body.home-page .project-paper-link:hover {
+    background: #e879f9;
+}
+
+body.home-page .green-dot {
+    background-color: #e879f9;
+    box-shadow: 0 0 8px rgba(232, 121, 249, 0.7);
+}
+
+body.home-page .about-text-content > p:first-child a {
+    color: #e879f9;
+    text-decoration: underline;
+    text-decoration-color: rgba(232, 121, 249, 0.55);
+    text-underline-offset: 0.18em;
+}
+
+body.home-page .about-text-content > p:first-child a:hover,
+body.home-page .about-text-content > p:first-child a:focus-visible {
+    color: #f0abfc;
+    text-decoration-color: currentColor;
+}
+
+
+
+
+/* --- Style for Theme Switch Button --- */
+.theme-toggle-btn {
+    background: none;
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1rem;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    /* Make sure the button is not shrunk */
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.theme-toggle-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+body.light-mode .theme-toggle-btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.theme-toggle-btn .fa-sun,
+.theme-toggle-btn .fa-moon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Dark state (default): Show the moon, hide the sun */
+.theme-toggle-btn .fa-moon {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+.theme-toggle-btn .fa-sun {
+    transform: translate(-50%, -150%);
+    opacity: 0;
+}
+
+/* Light status: Hide the moon, show the sun */
+body.light-mode .theme-toggle-btn .fa-moon {
+    transform: translate(-50%, 150%);
+    opacity: 0;
+}
+
+body.light-mode .theme-toggle-btn .fa-sun {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+
+/* --- Light Mode adjustments --- */
+body.light-mode .main-header {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+body.light-mode .resume-button {
+    color: #f4f4f5;
+    /* White letters */
+}
+
+body.light-mode .resume-dropdown {
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+body.light-mode .resume-dropdown a {
+    color: #18181b;
+}
+
+body.light-mode .resume-dropdown a:hover,
+body.light-mode .resume-dropdown a:focus-visible {
+    background: rgba(0, 0, 0, 0.06);
+}
+
+body.light-mode .main-nav a.is-active {
+    color: var(--text-primary);
+}
+
+body.light-mode .nav-indicator {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .welcome-badge {
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border-color);
+}
+
+body.light-mode .btn-secondary {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+body.light-mode .social-links a {
+    color: var(--text-secondary);
+    border: 1px solid var(--border-color);
+}
+
+body.light-mode .social-links a:hover {
+    color: var(--text-primary);
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+body.light-mode .contact-form input,
+body.light-mode .contact-form textarea {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Change the color of subheadings like "General Expertise", "Soft Skills"... */
+body.light-mode .skills-subtitle {
+    color: #6200ee;
+    /* A deep purple, easy to read on a white background */
+}
+
+/* Change color for each skill box (pill/tag) */
+body.light-mode .grid-item {
+    background-color: rgba(0, 0, 0, 0.05);
+    /* Light gray background */
+    border-color: rgba(0, 0, 0, 0.1);
+    color: var(--text-secondary);
+    /* Dark gray text, inherited from discoloration */
+}
+
+/* Change the color of the skill box's hover effect */
+body.light-mode .grid-item:hover {
+    color: var(--text-primary);
+    /* Black letters */
+    border-color: #007bff;
+    /* Darker blue border */
+    background-color: rgba(0, 123, 255, 0.1);
+    /* Light blue background */
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
+}

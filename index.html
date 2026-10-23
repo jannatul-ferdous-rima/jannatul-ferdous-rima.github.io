@@ -1,119 +1,60 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portfolio của Jannatul Ferdous - Sinh viên Kỹ thuật Phần mềm (TDTU), Experimental Quantum Photonics R&D Scientist đam mê xây dựng các sản phẩm công nghệ tối ưu, sáng tạo và hướng đến trải nghiệm người dùng." />
-    <!-- TIÊU ĐỀ MỚI -->
-    <title>Jannatul Ferdous - Experimental Quantum Photonics R&D Scientist</title>
-    <link rel="canonical" href="https://jannatul-ferdous.github.io/" />
+    <meta name="description" content="Jannatul Ferdous is an experimental quantum photonics researcher at Louisiana State University who builds optical experiments for quantum sensing, imaging and plasmonics. Co-first author of a 2026 Nature paper." />
+    <title>Jannatul Ferdous - Experimental Quantum Photonics Researcher</title>
+    <link rel="canonical" href="https://jannatul-ferdous-rima.github.io/" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Jannatul Ferdous - Computational Astrophysicist & Scientific Programmer">
-    <meta property="og:description" content="Portfolio của Jannatul Ferdous - Sinh viên Kỹ thuật Phần mềm (TDTU), Experimental Quantum Photonics R&D Scientist đam mê xây dựng các sản phẩm công nghệ tối ưu, sáng tạo và hướng đến trải nghiệm người dùng.">
-    <meta property="og:url" content="https://nageeb-zaman.github.io/">
-    <meta property="og:image" content="https://nageeb-zaman.github.io/assets/images/banner-cua-ban.jpg">
+    <meta property="og:title" content="Jannatul Ferdous - Experimental Quantum Photonics Researcher">
+    <meta property="og:description" content="Jannatul Ferdous is an experimental quantum photonics researcher at Louisiana State University who builds optical experiments for quantum sensing, imaging and plasmonics. Co-first author of a 2026 Nature paper.">
+    <meta property="og:url" content="https://jannatul-ferdous-rima.github.io/">
+    <meta property="og:image" content="https://jannatul-ferdous-rima.github.io/assets/Jannatul_Ferdous.jpg">
 
     <!-- Browser Tab Icon -->
     <link rel="icon" type="image/png" href="assets/Tab_Icon.png" />
 
-    <!-- ADD NEW FONTS FROM GOOGLE FONT -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- LINK CSS FONT AWESOME -->
-    <link rel="stylesheet" href="css/components/base.css" />
-    <link rel="stylesheet" href="css/components/header.css" />
-    <link rel="stylesheet" href="css/components/hero.css" />
-    <link rel="stylesheet" href="css/components/music-player.css" />
-    <link rel="stylesheet" href="css/components/sections.css" />
-    <link rel="stylesheet" href="css/components/about.css" />
-    <link rel="stylesheet" href="css/components/skills.css" />
-    <link rel="stylesheet" href="css/components/projects.css" />
-    <link rel="stylesheet" href="css/components/blog.css" />
-    <link rel="stylesheet" href="css/components/experience.css" />
-    <link rel="stylesheet" href="css/components/contact.css" />
-    <link rel="stylesheet" href="css/components/animations.css" />
-    <link rel="stylesheet" href="css/components/awards.css" />
-    <link rel="stylesheet" href="css/components/footer.css" />
-    <link rel="stylesheet" href="css/components/wakatime.css" />
-    <link rel="stylesheet" href="css/components/featured-projects.css" />
-    <link rel="stylesheet" href="css/components/interactive-skills.css" />
-    <link rel="stylesheet" href="css/components/theme.css" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="static/css/base.css" />
+    <link rel="stylesheet" href="static/css/header.css" />
+    <link rel="stylesheet" href="static/css/hero.css" />
+    <link rel="stylesheet" href="static/css/sections.css" />
+    <link rel="stylesheet" href="static/css/about.css" />
+    <link rel="stylesheet" href="static/css/skills.css" />
+    <link rel="stylesheet" href="static/css/projects.css" />
+    <link rel="stylesheet" href="static/css/experience.css" />
+    <link rel="stylesheet" href="static/css/contact.css" />
+    <link rel="stylesheet" href="static/css/animations.css" />
+    <link rel="stylesheet" href="static/css/awards.css" />
+    <link rel="stylesheet" href="static/css/footer.css" />
+    <link rel="stylesheet" href="static/css/featured-projects.css" />
+    <link rel="stylesheet" href="static/css/interactive-skills.css" />
+    <link rel="stylesheet" href="static/css/tech-skills.css" />
+    <link rel="stylesheet" href="static/css/education.css" />
+    <link rel="stylesheet" href="static/css/publications.css" />
+    <link rel="stylesheet" href="static/css/theme.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <style>
-        .theme-switcher-dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropdown-toggle {
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid var(--border-color);
-            color: var(--text-primary);
-            padding: 0.5rem 1rem;
-            border-radius: 9999px;
-            cursor: pointer;
-            font-size: 0.875rem;
-            font-weight: 600;
-            transition: background-color 0.3s, border-color 0.3s;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .dropdown-toggle:hover {
-            background-color: rgba(255, 255, 255, 0.15);
-        }
-
-        .dropdown-menu {
-            display: none;
-            position: absolute;
-            background-color: var(--bg-card);
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-            border-radius: 0.5rem;
-            border: 1px solid var(--border-color);
-            padding: 0.5rem 0;
-            right: 0;
-            bottom: 100%;
-            margin-bottom: 0.5rem;
-        }
-
-        .dropdown-menu a {
-            color: var(--text-primary);
-            padding: 0.75rem 1rem;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-            transition: background-color 0.2s;
-        }
-
-        .dropdown-menu a:hover {
-            background-color: rgba(255, 255, 255, 0.05);
-        }
-
-        .dropdown-menu.show {
-            display: block;
-        }
-    </style>
 </head>
 
-<body>
-    <!-- The scroll progress bar remains unchanged. -->
+<body class="home-page">
     <div class="scroll-progress-bar"></div>
 
     <header id="header-placeholder" class="main-header"></header>
 
     <main>
         <!-- ====================================================== -->
-        <!-- Section 1: Hero (Big Change) -->
+        <!-- Section 1: Hero -->
         <!-- ====================================================== -->
-        <section id="hero" class="hero-section">
+        <section id="home_page" class="hero-section">
             <div class="hero-background">
                 <div class="shape shape-1"></div>
                 <div class="shape shape-2"></div>
@@ -125,73 +66,59 @@
                     <div class="profile-card glass-card">
                         <div class="profile-header">
                             <div class="avatar-wrapper">
-                                <img src="assets/Jannatul_Ferdous.png" alt="Avatar" class="avatar" />
-                                <div class="status-indicator online"></div>
+                                <img src="assets/Jannatul_Ferdous.jpg" alt="Portrait of Jannatul Ferdous" class="avatar" />
                             </div>
                             <div class="profile-info">
                                 <h2>Jannatul Ferdous</h2>
-                                <p class="job-title">Experimental Quantum Photonics R&D Scientist</p>
+                                <p class="job-title">Experimental Physicist<br>Quantum Photonics</p>
                             </div>
                         </div>
                         <div class="profile-details">
-
-                            <p><i class="fas fa-briefcase"></i> Department of Physics and Astronomy<br> Louisiana State University</p>
-                            <p>
-                                <i class="fas fa-graduation-cap"></i>
-                                <a href="https://scholar.google.com/citations?user=54aQ7RgAAAAJ&hl=en" target="_blank">Google Scholar</a>
-                            </p>
-                            <p>
-                                <i class="fab fa-linkedin"></i>
-                                <a href="https://www.linkedin.com/in/jannatul-ferdous-139730117/" target="_blank">LinkedIn</a>
-                            </p>
+                            <p><i class="fas fa-university"></i> Department of Physics &amp; Astronomy<br>Louisiana State University</p>
+                            <p><i class="fas fa-graduation-cap"></i> Ph.D. expected May 2027</p>
                             <p><i class="fas fa-map-marker-alt"></i> Baton Rouge, Louisiana</p>
-                            
+                            <p><i class="fas fa-envelope"></i> <a href="mailto:jferdo2@lsu.edu">jferdo2@lsu.edu</a></p>
                         </div>
-
+                    </div>
+                    <div class="social-links animate-on-scroll">
+                        <a href="https://www.linkedin.com/in/jannatul-ferdous-139730117/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://scholar.google.com/citations?user=54aQ7RgAAAAJ&amp;hl=en" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                        <a href="https://orcid.org/0009-0000-1289-699X" target="_blank" rel="noopener" aria-label="ORCID" title="ORCID"><i class="fab fa-orcid"></i></a>
+                        <a href="mailto:jferdo2@lsu.edu" aria-label="Email" title="Email"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
 
                 <!-- Hero Text Content -->
                 <div class="hero-text-content">
-                    <div class="welcome-badge animate-on-scroll">Welcome to my Website</div>
-                    <h1 class="animate-on-scroll">Experimental Physicist<br>
-                        <span class="gradient-text">R&D Scientist</span>
+                    <div class="welcome-badge animate-on-scroll"><span class="badge-dot"></span> Ph.D. Researcher &middot; Available May 2027</div>
+                    <h1 class="animate-on-scroll">
+                        Experimental Physicist<br>
+                        <span class="gradient-text">R&amp;D Scientist</span>
                     </h1>
-                    <p style="color: white;font-size: 1.5rem;text-shadow: 0 2px 6px rgba(0, 0, 0, 1.0);" class="animate-on-scroll"> 
-                        Specializing in quantum photonics, plasmonics, optical characterization of materials, quantum sensing, and advanced experimental systems.</p>
+                    <p class="hero-tagline animate-on-scroll">I build optical experiments to understand and control multiphoton light&mdash;from room-temperature quantum materials to plasmonic hydrogen sensing&mdash;with applications in imaging and photonic computing, even amid noise and loss.</p>
+
+                    <!-- Proof strip: quick facts readable by anyone -->
+                    <ul class="hero-stats animate-on-scroll">
+                        <li><strong>Nature</strong><span>2026 paper, co-first author</span></li>
+                        <li><strong>~100&times;</strong><span>faster hydrogen detection with quantum sensing</span></li>
+                        <li><strong>8</strong><span>peer-reviewed papers, 3 as first author and 2 as co-first author</span></li>
+                        <li><strong>6+ yrs</strong><span>hands-on optics &amp; photonics lab work</span></li>
+                    </ul>
+
                     <div class="hero-buttons animate-on-scroll">
-                        <a href="#projects" class="btn btn-primary">View my projects <i
-                                class="fas fa-arrow-right"></i></a>
-                        <a href="#contact" class="btn btn-secondary">Get in touch</a>
-                    </div>
-                    <div class="social-links animate-on-scroll">
-                        <a style="color: white;" href="https://www.linkedin.com/in/nageebzaman/" aria-label="LinkedIn"><i
-                                class="fab fa-linkedin-in"></i></a>
-                        <a style="color: white;" href="https://scholar.google.com/citations?user=io6Sjl0AAAAJ&hl=en" aria-label="Google Scholar"><i
-                                class="fas fa-graduation-cap"></i></a>
-                        <a style="color: white;" href="https://github.com/nageeb-zaman" aria-label="GitHub"><i
-                                class="fab fa-github"></i></a>
-                        <a style="color: white;" href="mailto:mzama14@lsu.edu@lsu.com" aria-label="Email"><i
-                                class="fas fa-envelope"></i></a>
+                        <a href="#projects" class="btn btn-primary">View my research <i class="fas fa-arrow-right"></i></a>
+                        <details class="resume-menu resume-menu-action">
+                            <summary class="btn btn-secondary">Download Resume/CV <i class="fas fa-chevron-down" aria-hidden="true"></i></summary>
+                            <div class="resume-dropdown">
+                                <a href="assets/docs/Jannatul_Ferdous_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+                                <a href="assets/docs/Jannatul_Ferdous_CV.pdf" target="_blank" rel="noopener">CV</a>
+                            </div>
+                        </details>
                     </div>
                 </div>
             </div>
             <div class="scroll-down-indicator"></div>
         </section>
-
-        <!-- <div class="music-player-widget">
-            <img src="assets/music/img/Koe no Kiseki.png" alt="Song Cover" class="song-cover" id="song-cover">
-            <div class="song-info">
-                <h4 id="song-title">Koe no Kiseki</h4>
-                <p id="song-artist">Anime Song</p>
-            </div>
-            <div class="player-controls">
-                <i class="fas fa-backward-step" id="prev-btn"></i>
-                <i class="fas fa-play" id="play-pause-btn"></i>
-                <i class="fas fa-forward-step" id="next-btn"></i>
-            </div>
-            <i class="fas fa-volume-high"></i>
-        </div> -->
 
         <!-- ====================================================== -->
         <!-- Section 2: About Me -->
@@ -199,31 +126,42 @@
         <section id="about" class="content-section">
             <div class="container">
                 <div class="section-header animate-on-scroll">
-                    <div class="section-badge">My personal story</div>
                     <h2 class="section-title">About Me</h2>
                     <div class="title-underline"></div>
                 </div>
                 <div class="about-grid">
                     <div class="about-image-wrapper animate-on-scroll">
-                        <img src="assets/Nature_article.jpg" alt="A pensive anime character in a snowy city scene">
-                        <!-- <div class="status-tag">
-                            <span class="green-dot"></span> Available for work
-                        </div> -->
+                        <figure class="about-photo">
+                            <img src="assets/about_me/lab_photo.jpg" alt="Jannatul Ferdous aligning optics on a laser table in the Quantum Photonics Laboratory">
+                            <figcaption>At work on a multiphoton experiment in the Quantum Photonics Laboratory at LSU</figcaption>
+                        </figure>
+                        <figure class="about-photo">
+                            <img src="assets/optica_conference.png" alt="Jannatul Ferdous presenting her research on the quantum van Cittert–Zernike theorem at an Optica conference" loading="lazy">
+                            <figcaption>Presenting at an Optica conference in Puerto Vallarta, Mexico, November 2024</figcaption>
+                        </figure>
                     </div>
                     <div class="about-text-content animate-on-scroll">
-                        <p>I am an experimental physicist and PhD researcher at Louisiana State University, specializing in quantum photonics,
-                             plasmonics, optical materials, and quantum sensing. My research focuses on fundamental light–matter interactions and 
-                             the experimental investigation of complex physical phenomena. I have experience designing, building, and optimizing 
-                             advanced optical experiments, developing measurement approaches, and working with sophisticated photonic and 
-                             quantum-optical systems.</p>
-                        <p>My research spans multiphoton quantum coherence, plasmonic systems, quantum sensing, and the optical characterization 
-                            of materials and nanostructures. Through this work, I have developed expertise in experimental design, optical system 
-                            alignment, spectroscopy and optical measurements, quantum measurements, data analysis, and troubleshooting complex 
-                            experimental setups. I enjoy addressing challenging scientific problems that require a combination of fundamental 
-                            physics, careful experimentation, and quantitative analysis. I am particularly interested in experimental R&D 
-                            opportunities where my background in photonics, optical materials, quantum sensing, and fundamental physics can 
-                            contribute to the development of innovative technologies and solutions.</p>
-                         
+                        <p>I am an experimental physicist and PhD researcher at Louisiana State University's <a href="https://www.quantumphotonicslab.com/" target="_blank" rel="noopener">Quantum Photonics Group</a>, specializing in quantum photonics, plasmonics, optical materials, and quantum sensing. My research focuses on fundamental light&ndash;matter interactions and the experimental investigation of complex physical phenomena. I have experience designing, building, and optimizing advanced optical experiments, developing measurement approaches, and working with sophisticated photonic and quantum-optical systems.</p>
+                        <p>Along the way, I have:</p>
+                        <ul class="about-highlights">
+                            <li>co-led the experiments behind <strong>quantum statistical plasmonic metacrystals</strong>, a
+                                room-temperature material that filters light by its quantum statistics, published in
+                                <em>Nature</em> (2026) and highlighted in <em>Nature</em> News &amp; Views;</li>
+                            <li>built a <strong>quantum-enhanced plasmonic hydrogen sensor</strong> that detects hydrogen
+                                <strong>~100&times; faster</strong> and with a <strong>~46&times; lower detection limit</strong> than the
+                                classical measurement (first author, <em>Nature Communications</em>, accepted in principle);</li>
+                            <li>shown that multiphoton quantum coherence can <strong>emerge just by letting light propagate</strong>
+                                (first author, <em>ACS Photonics</em>, 2024).</li>
+                        </ul>
+                        <p>In the lab I build, align, and characterize free-space and on-chip optical setups for quantum photonics experiments,
+                            build photon-number-resolving detection with
+                            SNSPDs and APDs, model nanostructures with FDTD and COMSOL, and automate data acquisition in LabVIEW and
+                            Python. Before LSU, I built and measured 3D-printed acoustic waveguides for my M.S. at the University of
+                            Texas Rio Grande Valley.</p>
+                        <p>I'm looking for experimental R&amp;D roles starting in 2027 where optical system design, quantum
+                            sensing and careful measurement can turn into new technology.</p>
+                        <p>Outside the lab, I paint, garden and make crafts, and my favorite way to spend time these
+                            days is with our daughter.</p>
                         <div class="info-box-wrapper glass-card">
                             <div class="info-box">
                                 <div>
@@ -232,7 +170,7 @@
                                 </div>
                                 <div>
                                     <span class="info-label">Email</span>
-                                    <p>jferdo2@lsu.edu</p>
+                                    <p><a href="mailto:jferdo2@lsu.edu">jferdo2@lsu.edu</a></p>
                                 </div>
                                 <div>
                                     <span class="info-label">Location</span>
@@ -240,11 +178,20 @@
                                 </div>
                                 <div>
                                     <span class="info-label">Availability</span>
-                                    <p class="available-status">Open to Work</p>
+                                    <p class="available-status">Full-time roles from May 2027</p>
+                                </div>
+                                <div>
+                                    <span class="info-label">Work authorization</span>
+                                    <p>U.S. Permanent Resident</p>
                                 </div>
                             </div>
-                            <a href="download-resume.html" download class="btn-download-resume">Download Resume <i
-                                    class="fas fa-download"></i></a>
+                            <details class="resume-menu resume-menu-action resume-menu-action--full">
+                                <summary class="btn-download-resume">Download Resume/CV <i class="fas fa-chevron-down" aria-hidden="true"></i></summary>
+                                <div class="resume-dropdown">
+                                    <a href="assets/docs/Jannatul_Ferdous_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+                                    <a href="assets/docs/Jannatul_Ferdous_CV.pdf" target="_blank" rel="noopener">CV</a>
+                                </div>
+                            </details>
                         </div>
                     </div>
                 </div>
@@ -253,524 +200,486 @@
 
 
         <!-- ====================================================== -->
-        <!-- Section 3: Featured Works (NEW ALTERNATING LAYOUT) -->
+        <!-- Section 3: Projects & Research -->
         <!-- ====================================================== -->
         <section id="projects" class="content-section">
             <div class="container">
                 <div class="section-header animate-on-scroll">
-                    <div class="section-badge">A selection of my research and technical work</div>
-                    <h2 class="section-title">Research Projects</h2>
+                    <div class="section-badge">A glimpse of my research</div>
+                    <h2 class="section-title">Projects &amp; Research</h2>
                     <div class="title-underline"></div>
                 </div>
-
-                <!-- PROJECT 1: Omacha Shop (Layout: Image Left, Details Right) -->
-                <div class="project-showcase-grid animate-on-scroll">
-                    <div class="showcase-card">
-                        <!-- <div class="showcase-header"><span>Omacha Project</span></div> -->
-                        <div class="showcase-content">
-                            <!-- <div class="text-features">
-                                <h1>OMACHA SHOP<br>E-COMMERCE</h1>
-                                <h4 class="feature-title">FEATURES</h4>
-                                <ul>
-                                    <li>Full-stack e-commerce platform built with PHP & MySQL.</li>
-                                    <li>Robust admin panel for product, order, and user management.</li>
-                                    <li>Responsive design ensuring a seamless experience on all devices.</li>
-                                </ul>
-                            </div> -->
-                            <div class="image-gallery">
-                                <img src="assets/projects_pics/Fig_metacrystal.jpg" alt="Project_1" class="showcase-img">
-                                <!-- <img src="assets/omacha/product.jpg" alt="Omacha Homepage" class="showcase-img"> -->
-                                <!-- <img src="assets/omacha/product_detail.jpg" alt="Omacha Homepage" class="showcase-img"> -->
-                                 <p class="figure-title">
-        Quantum statistical plasmonic metacrystal and experimental platform.
-    </p>
-                            </div>
+                <h3 class="research-level-title">Published Research</h3>
+                <h4 class="research-sublevel-title">Ph.D. Research <span>Louisiana State University</span></h4>
+                <div class="research-grid">
+                    <a href="project.html#plasmonic-metacrystals" class="research-card glass-card animate-on-scroll">
+                        <div class="research-card-media fit-contain">
+                            <img src="assets/cards/p1_metacrystal.jpg" alt="Schematic of a plasmonic metacrystal that transmits or blocks multiphoton light depending on its quantum statistics" loading="lazy">
                         </div>
-                    </div>
-                    <div class="details-column">
-                        <h3>Quantum Statistical Plasmonic Metacrystals</h3>
-                        <p class="project-category">PdD Research, Quantum Photonics[2022-2026]</p>
-                        <div class="publication-badge">
-    <i class="fas fa-star"></i> Published in Nature
-</div>
-
-<div class="media-coverage">
-    <h4>Featured in the Media</h4>
-
-    <div class="media-links">
-        <a href="https://www.nature.com/articles/d41586-026-02038-x?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">
-            Nature News & Views
-        </a>
-
-        <a href="https://phys.org/news/2026-07-physicists-room-temperature-quantum-material.html" target="_blank" rel="noopener noreferrer">
-            Phys.org
-             </a>
-             <a href="https://www.lsu.edu/science/news/2026/07/rt-quantum-material.php" target="_blank" rel="noopener noreferrer">
-            LSU News
-        </a>
-
-        
-       
-    </div>
-</div>
-                        <div class="project-tags">
-    <span>Nanophotonics</span><span>Plasmonics</span><span>Optical Characterization</span><span>Photon-Number-Resolving Detection</span><span>FDTD Simulation</span><span>Confocal Microscopy</span>
+                        <div class="research-card-body">
+                            <p class="research-card-category">Ph.D. Research &middot; LSU</p>
+                            <h3>A Material That Sorts Light by Its Quantum Statistics</h3>
+                            <p class="research-card-hook">Gold nanoantenna arrays that let some kinds of multiphoton light through and block others, the way a semiconductor has allowed and forbidden energy bands.</p>
+                            <p class="research-card-result"><i class="fas fa-star"></i> <em>Nature</em> 2026 &middot; co-first author</p>
+                            <div class="research-card-tags"><span>Plasmonics</span><span>PNR detection</span><span>Lumerical FDTD</span><span>Confocal microscopy</span></div>
+                            <span class="research-card-link">Read more <i class="fas fa-arrow-right"></i></span>
                         </div>
-                        <div class="description-box glass-card">
-                            <p><div class="description-box glass-card">
-    <p>
-    Co-first author of a 2026 <em>Nature</em> publication investigating quantum
-    statistical transport in plasmonic metacrystals. The work demonstrated how
-    engineered nanostructures can selectively transmit and filter multiphoton
-    light based on its quantum statistical properties. I contributed to the
-    experimental design, implementation, optical characterization, and data
-    analysis of the plasmonic platform, including FDTD electromagnetic
-    simulations to model and understand the optical response of the
-    nanostructure.
-</p>
-</div>
-<div class="project-links">
-    <a href="https://www.nature.com/articles/s41586-026-10782-3" target="_blank" rel="noopener noreferrer">
-        <i class="fas fa-file-alt"></i> View Publication
-    </a>
-</div>
+                    </a>
+                    <a href="project.html#hydrogen-sensing" class="research-card glass-card animate-on-scroll">
+                        <div class="research-card-media fit-contain">
+                            <img src="assets/cards/p2_hydrogen_sensing.jpg" alt="Schematic of a plasmonic nanoslit sensor where multiparticle plasmons probe hydrogen" loading="lazy">
                         </div>
-                        <!-- <div class="project-links">
-                            <a href="https://github.com/nagee-zaman/Omacha_Shop" target="_blank"
-                                aria-label="GitHub"><i class="fab fa-github"></i></a>
-                            <a href="https://nageeb-zaman.github.io/Omacha-Shop-Demo/" aria-label="Project Details"><i
-                                    class="fas fa-link"></i></a>
-                        </div> -->
-                    </div>
+                        <div class="research-card-body">
+                            <p class="research-card-category">Ph.D. Research &middot; LSU</p>
+                            <p class="research-card-status">First author &middot; Accepted in principle &middot; <em>Nature Communications</em></p>
+                            <h3>Detecting Hydrogen Faster With Quantum Light</h3>
+                            <p class="research-card-hook">A palladium&ndash;gold plasmonic sensor read out by photon-number-resolving detectors, which spots hydrogen sooner and at lower concentration than a classical readout.</p>
+                            <p class="research-card-result"><i class="fas fa-chart-line"></i> ~100&times; faster &middot; ~46&times; lower detection limit</p>
+                            <div class="research-card-tags"><span>Quantum sensing</span><span>LabVIEW</span><span>Fisher information</span><span>Gas sensing</span></div>
+                            <span class="research-card-link">Read more <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                    <a href="project.html#multiphoton-coherence" class="research-card glass-card animate-on-scroll">
+                        <div class="research-card-media fit-contain">
+                            <img src="assets/cards/p4_multiphoton_coherence.jpg" alt="Diagram of thermal multiphoton light scattered by an optical grating and changing its photon statistics as it propagates" loading="lazy">
+                        </div>
+                        <div class="research-card-body">
+                            <p class="research-card-category">Ph.D. Research &middot; LSU</p>
+                            <h3>Multiphoton Quantum Coherence in Propagating Light</h3>
+                            <p class="research-card-hook">Showed that ordinary thermal light can develop nonclassical multiphoton properties simply by propagating through free space.</p>
+                            <p class="research-card-result"><i class="fas fa-chart-line"></i> <em>ACS Photonics</em> 2024 &middot; first author</p>
+                            <div class="research-card-tags"><span>State tomography</span><span>SNSPDs</span><span>MATLAB</span><span>Mathematica</span></div>
+                            <span class="research-card-link">Read more <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                    <a href="project.html#photonix-coherence" class="research-card glass-card animate-on-scroll">
+                        <div class="research-card-media fit-contain">
+                            <img src="assets/cards/p7_photonix_coherence.jpg" alt="Experimental multiphoton subsystems with different spatial structures and coherence properties, and the measurement setup" loading="lazy">
+                        </div>
+                        <div class="research-card-body">
+                            <p class="research-card-category">Ph.D. Research &middot; LSU</p>
+                            <h3>Isolating Classical and Quantum Coherence in a Multiphoton System</h3>
+                            <p class="research-card-hook">A classical pseudothermal field can host isolated multiphoton subsystems with distinct coherence properties, including quantum coherence in systems of up to 40 photons.</p>
+                            <p class="research-card-result"><i class="fas fa-chart-line"></i> <em>PhotoniX</em> 2024 &middot; co-author</p>
+                            <div class="research-card-tags"><span>Multiphoton coherence</span><span>Orbital angular momentum</span><span>Quantum optics</span></div>
+                            <span class="research-card-link">Read more <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                    <a href="project.html#quantum-reservoir" class="research-card glass-card animate-on-scroll">
+                        <div class="research-card-media fit-contain">
+                            <img src="assets/cards/p3_quantum_reservoir.jpg" alt="Diagram of a multiphoton quantum reservoir that uses photon number, orbital angular momentum and polarization" loading="lazy">
+                        </div>
+                        <div class="research-card-body">
+                            <p class="research-card-category">Ph.D. Research &middot; LSU</p>
+                            <h3>Computing With Many Photons at Room Temperature</h3>
+                            <p class="research-card-hook">Optical networks that encode information in photon number, twisted light (OAM) and polarization, and remain robust to noise and loss.</p>
+                            <p class="research-card-result"><i class="fas fa-chart-line"></i> <em>Advanced Science</em> 2026 &middot; co-author</p>
+                            <div class="research-card-tags"><span>SLM</span><span>OAM</span><span>APDs &amp; time tagger</span><span>Python</span></div>
+                            <span class="research-card-link">Read more <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                    <a href="project.html#quantum-imaging" class="research-card glass-card animate-on-scroll">
+                        <div class="research-card-media fit-contain">
+                            <img src="assets/cards/p5_quantum_imaging.jpg" alt="Single-pixel quantum camera using natural light, a digital micromirror device and photon-number-resolving detectors" loading="lazy">
+                        </div>
+                        <div class="research-card-body">
+                            <p class="research-card-category">Ph.D. Research &middot; LSU</p>
+                            <h3>Quantum Imaging With Natural Light</h3>
+                            <p class="research-card-hook">A single-pixel camera that pulls a clear image out of thermal light even when background noise hides the classical image.</p>
+                            <p class="research-card-result"><i class="fas fa-chart-line"></i> <em>Applied Physics Reviews</em> 2025 &middot; co-author</p>
+                            <div class="research-card-tags"><span>DMD</span><span>Compressive sensing</span><span>Raster scanning</span><span>PNR detection</span></div>
+                            <span class="research-card-link">Read more <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
                 </div>
-
- 
-                <!-- PROJECT 2: BrickShop (Layout: Details Left, Image Right) -->
-                <div class="project-showcase-grid layout-reversed animate-on-scroll">
-                    <div class="showcase-card">
-                        <!-- <div class="showcase-header"><span>BrickShop Project</span></div> -->
-                        <div class="showcase-content">
-                            <div class="text-features">
-                                <!-- <h4 class="feature-title">FEATURES</h4> -->
-                                <!-- <ul>
-                                    <li>Modern e-commerce hub developed with Node.js and Express.js.</li>
-                                    <li>Sleek and efficient admin UI built with Tailwind CSS.</li>
-                                    <li>Focus on modern JavaScript stack and non-relational databases.</li>
-                                </ul> -->
-                            </div>
-                            <div class="image-gallery">
-                                <img src="assets/brickshop/Hydrogen Sensing.png" alt="BrickShop Homepage" class="showcase-img">
-                                <p class="figure-title">
-        Quantum-Enhanced Plasmonic Hydrogen Sensing Platform
-    </p>
-                                <!-- <img src="assets/brickshop/admin_dashboard.png" alt="BrickShop Homepage"
-                                     class="showcase-img"> -->
-                            </div>
+                <h4 class="research-sublevel-title">M.S. Research <span>University of Texas Rio Grande Valley</span></h4>
+                <div class="research-grid">
+                    <a href="project.html#acoustic-non-hermitian" class="research-card glass-card animate-on-scroll">
+                        <div class="research-card-media fit-contain">
+                            <img src="assets/cards/p6_acoustic_waveguide.jpg" alt="Band structure and mode profile of a 3D-printed acoustic waveguide of coupled resonators" loading="lazy">
                         </div>
-                    </div>
-                    <div class="details-column">
-                        <h2>BrickShop</h2>
-                        <p class="project-category">Web, E-commerce, Node.js</p>
-                        <div class="project-tags"><span>Node.js</span><span>Express.js</span><span>TailwindCSS</span>
+                        <div class="research-card-body">
+                            <p class="research-card-category">M.S. Research &middot; UT Rio Grande Valley</p>
+                            <h3>Observation of Robust Zero-Energy Extended States</h3>
+                            <p class="research-card-hook">A lossy acoustic waveguide hosts a bulk state that remains remarkably stable under structural disorder.</p>
+                            <p class="research-card-result"><i class="fas fa-chart-line"></i> <em>Physical Review Applied</em> 19, L061002 (2023) &middot; first author</p>
+                            <div class="research-card-tags"><span>Non-Hermitian physics</span><span>Acoustic waveguides</span><span>Disorder robustness</span></div>
+                            <span class="research-card-link">Read more <i class="fas fa-arrow-right"></i></span>
                         </div>
-                        <div class="description-box glass-card">
-                            <p>A modern e-commerce hub for building block fans, developed with Node.js and a Tailwind
-                                CSS admin UI.</p>
+                    </a>
+                    <a href="project.html#acoustic-filter" class="research-card glass-card animate-on-scroll">
+                        <div class="research-card-media fit-contain">
+                            <img src="assets/figures/acoustic_filter_fig3.jpg" alt="Model of the lossy acoustic superlattice and its measured reflection spectrum" loading="lazy">
                         </div>
-                        <div class="project-links">
-                            <a href="https://github.com/nagee-zaman/BrickShop" target="_blank" aria-label="GitHub"><i
-                                    class="fab fa-github"></i></a>
-                            <a href="brickshop.html" aria-label="Project Details"><i class="fas fa-link"></i></a>
+                        <div class="research-card-body">
+                            <p class="research-card-category">M.S. Research &middot; UT Rio Grande Valley</p>
+                            <h3>Tunable Non-Hermitian Acoustic Filter</h3>
+                            <p class="research-card-hook">A 3D-printed acoustic superlattice uses engineered loss to selectively absorb or reflect chosen frequencies.</p>
+                            <p class="research-card-result"><i class="fas fa-chart-line"></i> <em>Physical Review Applied</em> 16, 014012 (2021) &middot; co-first author</p>
+                            <div class="research-card-tags"><span>COMSOL</span><span>3D printing</span><span>Acoustic measurements</span></div>
+                            <span class="research-card-link">Read more <i class="fas fa-arrow-right"></i></span>
                         </div>
-                    </div>
+                    </a>
                 </div>
-
-
-<!-- PROJECT 2: Scalable Quantum Sensing (Layout: Details Left, Image Right) -->
-<div class="project-showcase-grid layout-reversed animate-on-scroll">
-    <div class="showcase-card">
-        <div class="showcase-content">
-
-            <div class="text-features">
-                <!-- Research project -->
-            </div>
-
-            <div class="image-gallery">
-                <img src="assets/brickshop/Hydrogen Sensing.png"
-                     alt="Quantum-enhanced plasmonic hydrogen sensing platform"
-                     class="showcase-img">
-
-                <p class="figure-title">
-                    Quantum-Enhanced Plasmonic Hydrogen Sensing Platform
-                </p>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="details-column">
-        <h2>Scalable Quantum Sensing with Robust Multiparticle Plasmonic Systems</h2>
-
-        <p class="project-category">
-            PhD Research, Quantum Photonics | 2022–2026
-        </p>
-
-        <div class="project-tags">
-            <span>Quantum Sensing</span>
-            <span>Plasmonics</span>
-            <span>Nanophotonics</span>
-            <span>Hydrogen Sensing</span>
-            <span>Photon-Number-Resolving Detection</span>
-            <span>FDTD Simulation</span>
-        </div>
-
-        <div class="description-box glass-card">
-            <p>
-                First author of a study demonstrating scalable quantum plasmonic
-                sensing using multiparticle systems under realistic noise and loss
-                conditions. The work demonstrates hydrogen sensing through
-                multipolar plasmonic resonances and photon-number-resolving
-                detection. I contributed to the experimental design,
-                implementation, optical characterization, and data analysis,
-                including FDTD electromagnetic simulations to understand the
-                optical response of the plasmonic nanostructure.
-            </p>
-        </div>
-
-        <div class="project-links">
-            <a href="YOUR-PAPER-LINK-HERE"
-               target="_blank" rel="noopener noreferrer">
-                <i class="fas fa-file-alt"></i> View Publication
-            </a>
-        </div>
-    </div>
-</div>
-
-
-                <!-- PROJECT 3: Aptis Practice -->
-                <div class="project-showcase-grid animate-on-scroll">
-                    <div class="showcase-card">
-                        <div class="showcase-header"><span>Aptis Practice Project</span></div>
-                        <div class="showcase-content">
-                            <div class="text-features">
-                                <h1>APTIS PRACTICE<br>TESTING TOOL</h1>
-                                <h4 class="feature-title">FEATURES</h4>
-                                <ul>
-                                    <li>Interactive web tool for Aptis exam preparation.</li>
-                                    <li>Includes simulated tests and a scoring system.</li>
-                                    <li>Unique learning tools based on "key" and "memory story" methods.</li>
-                                </ul>
-                            </div>
-                            <div class="image-gallery">
-                                <img src="assets/home_aptis.png" alt="Aptis Practice UI" class="showcase-img">
-                                <div class="figma-embed-container">
-                                    <iframe
-                                        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fcommunity%2Ffile%2F1622808499508850540%2Faptis-e-learning-exam-practice-platform-ui-aptis-practice"
-                                        allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="details-column">
-                        <h2>Aptis Practice</h2>
-                        <p class="project-category">Web, Frontend, Educational Tool</p>
-                        <div class="project-tags">
-                            <span>HTML5</span><span>CSS3</span><span>JavaScript (ES6+)</span><span>Github Pages</span>
-                        </div>
-                        <div class="description-box glass-card">
-                            <p>I study how some of the brightest explosions in the universe produce their enormous amounts of light. 
-                                My research uses computer simulations to model the life and death of massive stars and how the material 
-                                surrounding an exploding star can interact with the explosion. I build computational models and compare their 
-                                predicted light and spectra with observations from real supernovae. This work combines physics, programming, 
-                                numerical simulations, and data analysis to understand what makes these extraordinary cosmic explosions so bright.</p>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/nagee-zaman/aptis-practice" target="_blank"
-                                aria-label="GitHub"><i class="fab fa-github"></i></a>
-                            <a href="https://nageeb-zaman.github.io/aptis-practice/" target="_blank"
-                                aria-label="Live Demo"><i class="fas fa-link"></i></a>
-                            <a href="https://www.figma.com/community/file/1622808499508850540/aptis-e-learning-exam-practice-platform-ui-aptis-practice"
-                                target="_blank" aria-label="Figma Design"><i class="fab fa-figma"></i></a>
-                        </div>
-                    </div>
+                <h3 class="research-level-title ongoing-section-title">Ongoing Projects</h3>
+                <div class="ongoing-projects-grid">
+                    <article class="ongoing-project-card glass-card animate-on-scroll">
+                        <p class="ongoing-project-role">Project Lead</p>
+                        <h4>Quantum Reservoir Computing on a Plasmonic Platform</h4>
+                        <p>Leading experimental development of a plasmonic quantum reservoir for multidimensional information processing. The project combines orbital-angular-momentum and polarization control, SLM-based spatial-mode manipulation, photon-number-resolving detection with avalanche photodiodes, time-tagged photon measurements, and optical-correlation analysis.</p>
+                    </article>
+                    <article class="ongoing-project-card glass-card animate-on-scroll">
+                        <p class="ongoing-project-role">Contributing</p>
+                        <h4>Plasmonic Biosensing</h4>
+                        <p>An on-chip plasmonic biosensing platform is being developed to characterize the refractive-index-dependent optical response of gold-based structures. Under collimated illumination, angular reflectance is measured with a photodetector. Coupling to a plasmonic mode produces a resonant reflectance minimum; tracking this feature across media with different refractive indices provides the sensing readout.</p>
+                    </article>
+                    <article class="ongoing-project-card glass-card animate-on-scroll">
+                        <p class="ongoing-project-role">Contributing</p>
+                        <h4>Homodyne Phase Measurement</h4>
+                        <p>This work presents a tomography method that combines homodyne interferometry with photon-number-resolving detection to measure the quantum phase of multiphoton systems. It reconstructs complementary photon-number and phase representations for systems containing up to 15 photons, establishes the number&ndash;phase uncertainty relation, and enables spatially resolved quantum-phase characterization.</p>
+                    </article>
+                    <article class="ongoing-project-card glass-card animate-on-scroll">
+                        <p class="ongoing-project-role">Contributing</p>
+                        <h4>Multiphoton Discrete Fractional Fourier Transform in a Waveguide Beam Splitter</h4>
+                        <p>Characterizing a waveguide beam splitter embedded in a glass plate to investigate the experimental realization of the multiphoton discrete fractional Fourier transform.</p>
+                    </article>
                 </div>
-
-                <!-- PROJECT 4: Unidoc -->
-                <div class="project-showcase-grid layout-reversed animate-on-scroll">
-                    <div class="showcase-card">
-                        <div class="showcase-header"><span>Unidoc Project</span></div>
-                        <div class="showcase-content">
-                            <div class="text-features">
-                                <h1>UNIDOC<br>DOCUMENT HUB</h1>
-                                <h4 class="feature-title">FEATURES</h4>
-                                <ul>
-                                    <li>A centralized document management for university students.</li>
-                                    <li>User-friendly interface for finding and storing study materials.</li>
-                                    <li>Improves accessibility and resource sharing.</li>
-                                </ul>
-                            </div>
-                            <div class="image-gallery">
-                                <img src="assets/home_unidocs.png" alt="Unidoc Homepage" class="showcase-img">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="details-column">
-                        <h2>Unidoc</h2>
-                        <p class="project-category">Web, Frontend, Educational</p>
-                        <div class="project-tags"><span>React</span><span>Tailwind CSS</span><span>Firebase</span>
-                        </div>
-                        <div class="description-box glass-card">
-                            <p>A comprehensive document hub designed to help university students easily manage, find,
-                                and share their study materials effectively.</p>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                            <a href="#" aria-label="Live Demo"><i class="fas fa-link"></i></a>
-                        </div>
-                    </div>
+                <div class="view-all-posts-container animate-on-scroll" style="margin-top: 3rem;">
+                    <a href="project.html" class="btn btn-secondary">Explore published research details <i class="fas fa-arrow-right"></i></a>
                 </div>
-
-                <!-- You can add more featured projects here -->
-
-            </div>
-            <!-- === BỔ SUNG: Nút xem tất cả dự án === -->
-            <div class="view-all-posts-container animate-on-scroll" style="margin-top: 4rem;">
-                <a href="project.html" class="btn btn-secondary">
-                    View All Projects <i class="fas fa-arrow-right"></i>
-                </a>
             </div>
         </section>
 
 
         <!-- ====================================================== -->
-        <!-- Section 4: Skills (CẬP NHẬT) -->
+        <!-- Section 4: Technical Skills -->
         <!-- ====================================================== -->
         <section id="skills" class="content-section">
             <div class="container">
                 <div class="section-header animate-on-scroll">
-                    <!-- Thêm lại badge "My Skills" -->
-                    <div class="section-badge">My Skills</div>
-                    <!-- Đổi tiêu đề -->
-                    <h2 class="section-title">Technical Stack</h2>
+                    <div class="section-badge">What I work with</div>
+                    <h2 class="section-title">Technical Skills</h2>
                     <div class="title-underline"></div>
+                    <p class="tech-legend"><span class="core">Hot purple</span> marks the techniques and tools I use most.</p>
                 </div>
-
-                <div class="skills-wrapper">
-                    <div class="skills-grid">
-                        <!-- JavaScript sẽ tự động chèn các thanh kỹ năng vào đây -->
-                        <p class="skills-loading">
-                            <i class="fas fa-spinner fa-spin"></i> Loading technical skills...
-                        </p>
+                <div class="tech-grid">
+                    <div class="tech-card glass-card animate-on-scroll">
+                        <div class="tech-card-head">
+                            <i class="fas fa-atom"></i>
+                            <h3>Quantum optical techniques</h3>
+                        </div>
+                        <p>Measuring and characterizing light at the level of single photons.</p>
+                        <div class="tech-chips"><span class="core">Photon-number-resolving detection</span><span class="core">Quantum-state characterization</span><span>Quantum-state tomography</span><span class="core">Quantum sensing</span><span>Quantum imaging</span><span>Quantum metrology</span><span>Optical characterization of materials</span><span>Pseudo-thermal light generation &amp; characterization (g<sup>(2)</sup>(0) &asymp; 2)</span></div>
+                    </div>
+                    <div class="tech-card glass-card animate-on-scroll">
+                        <div class="tech-card-head">
+                            <i class="fas fa-lightbulb"></i>
+                            <h3>Optical systems</h3>
+                        </div>
+                        <p>Designing, building and aligning free-space experiments.</p>
+                        <div class="tech-chips"><span class="core">Free-space optics</span><span class="core">Optical system design</span><span>Interferometry</span><span>Confocal microscopy</span><span>Polarization control</span><span>OAM manipulation</span></div>
+                    </div>
+                    <div class="tech-card glass-card animate-on-scroll">
+                        <div class="tech-card-head">
+                            <i class="fas fa-microchip"></i>
+                            <h3>Detectors &amp; instrumentation</h3>
+                        </div>
+                        <p>Hardware I set up, calibrate and synchronize.</p>
+                        <div class="tech-chips"><span class="core">SNSPDs</span><span class="core">APDs</span><span class="core">Spatial light modulators (SLM)</span><span>Digital micromirror devices (DMD)</span><span>Lasers</span><span>Time taggers</span><span>Motorized stages</span><span>Data acquisition systems</span></div>
+                    </div>
+                    <div class="tech-card glass-card animate-on-scroll">
+                        <div class="tech-card-head">
+                            <i class="fas fa-border-all"></i>
+                            <h3>Photonics &amp; modeling</h3>
+                        </div>
+                        <p>Nanostructures I work with and the tools I simulate them in.</p>
+                        <div class="tech-chips"><span class="core">Plasmonics</span><span>Nanophotonics</span><span>Photonic waveguides</span><span>LSPR / SPR</span><span class="core">ANSYS Lumerical FDTD</span><span>COMSOL Multiphysics</span></div>
+                    </div>
+                    <div class="tech-card glass-card animate-on-scroll">
+                        <div class="tech-card-head">
+                            <i class="fas fa-code"></i>
+                            <h3>Programming &amp; automation</h3>
+                        </div>
+                        <p>Running experiments and analyzing the data.</p>
+                        <div class="tech-chips"><span class="core">Python</span><span class="core">LabVIEW</span><span>MATLAB</span><span>Mathematica</span><span>LaTeX</span></div>
+                    </div>
+                    <div class="tech-card glass-card animate-on-scroll">
+                        <div class="tech-card-head">
+                            <i class="fas fa-cube"></i>
+                            <h3>Design &amp; fabrication</h3>
+                        </div>
+                        <p>Making the parts and samples an experiment needs.</p>
+                        <div class="tech-chips"><span>Blender 3D modeling</span><span>3D printing</span><span>Hardware prototyping</span><span>FIB fabrication</span></div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- ====================================================== -->
-        <!-- Section 5: Awards & Achievements (UPDATED WITH IMAGE) -->
+        <!-- Section 5: Education & Experience (side by side on wide screens) -->
         <!-- ====================================================== -->
-        <section id="awards" class="content-section">
+        <section id="background" class="content-section">
             <div class="container">
                 <div class="section-header animate-on-scroll">
-                    <div class="section-badge">Recognition & Accomplishments</div>
-                    <h2 class="section-title">Awards & Achievements</h2>
+                    <div class="section-badge">Where I trained and worked</div>
+                    <h2 class="section-title">Education &amp; Experience</h2>
                     <div class="title-underline"></div>
                 </div>
-
-                <!-- Card for Award Details -->
-                <div class="award-card glass-card animate-on-scroll">
-                    <div class="award-info">
-                        <p class="award-date">April 2023</p>
-                        <h3 class="award-title">Consolation Prize</h3>
-                        <p class="award-competition">'Class Website Design Competition 2023'</p>
-                        <p class="award-issuer">Faculty of Information Technology, Ton Duc Thang University</p>
+                <div class="bg-columns">
+                    <div id="education" class="bg-col">
+                        <h3 class="bg-col-title"><i class="fas fa-graduation-cap"></i> Education</h3>
+                        <div class="edu-timeline">
+                            <div class="edu-item edu-item--current animate-on-scroll">
+                                <div class="edu-dot"></div>
+                                <div class="edu-card glass-card">
+                                    <div class="edu-top">
+                                        <h3>Ph.D. in Physics (Quantum Photonics)</h3>
+                                        <span class="edu-years">2021 &ndash; May 2027 (expected)</span>
+                                    </div>
+                                    <p class="edu-school"><i class="fas fa-university"></i> Louisiana State University &middot; Baton Rouge, LA, USA</p>
+                                    <p>Experimental quantum photonics and plasmonics in the Quantum Photonics Group of Dr. Omar S. Maga&ntilde;a-Loaiza.</p>
+                                    <a class="edu-link" href="project.html#plasmonic-metacrystals">See my Ph.D. research <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="edu-item animate-on-scroll">
+                                <div class="edu-dot"></div>
+                                <div class="edu-card glass-card">
+                                    <div class="edu-top">
+                                        <h3>M.S. in Physics</h3>
+                                        <span class="edu-years">2019 &ndash; 2021</span>
+                                    </div>
+                                    <p class="edu-school"><i class="fas fa-university"></i> University of Texas Rio Grande Valley &middot; Edinburg, TX, USA</p>
+                                    <p>Research on non-Hermitian acoustic systems: two papers in <em>Physical Review Applied</em>.</p>
+                                    <div class="edu-chips"><span>Presidential Graduate Research Assistantship Award, 2019</span></div>
+                                    <a class="edu-link" href="project.html#acoustic-non-hermitian">See the M.S. research <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="edu-item animate-on-scroll">
+                                <div class="edu-dot"></div>
+                                <div class="edu-card glass-card">
+                                    <div class="edu-top">
+                                        <h3>M.S. in Physics</h3>
+                                        <span class="edu-years">2016</span>
+                                    </div>
+                                    <p class="edu-school"><i class="fas fa-university"></i> University of Dhaka &middot; Dhaka, Bangladesh</p>
+                                </div>
+                            </div>
+                            <div class="edu-item animate-on-scroll">
+                                <div class="edu-dot"></div>
+                                <div class="edu-card glass-card">
+                                    <div class="edu-top">
+                                        <h3>B.S. in Physics</h3>
+                                        <span class="edu-years">2014</span>
+                                    </div>
+                                    <p class="edu-school"><i class="fas fa-university"></i> University of Dhaka &middot; Dhaka, Bangladesh</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="award-description">
-                        <ul>
-                            <li>
-                                Achieved prize in a university-wide competition with over 20 participating teams, as
-                                part of the "Youth Pioneering Digital Transformation" initiative.
-                            </li>
-                            <li>
-                                Developed a class website on WordPress aimed at fostering academic exchange,
-                                contributing significantly to UI/UX design and theme customization.
-                            </li>
-                            <li>
-                                Demonstrated strong teamwork, creativity, and the practical application of web
-                                development skills in a competitive environment.
-                            </li>
-                        </ul>
+                    <div id="experience" class="bg-col">
+                        <h3 class="bg-col-title"><i class="fas fa-briefcase"></i> Experience</h3>
+                        <div class="edu-timeline">
+                            <div class="edu-item edu-item--current animate-on-scroll">
+                                <div class="edu-dot"></div>
+                                <div class="edu-card glass-card">
+                                    <div class="edu-top">
+                                        <h3>Graduate Research Assistant</h3>
+                                        <span class="edu-years">2023 &ndash; present</span>
+                                    </div>
+                                    <p class="edu-school"><i class="fas fa-briefcase"></i> Quantum Photonics Group, Louisiana State University</p>
+                                    <ul class="exp-list">
+                                        <li>Designed and characterized room-temperature plasmonic metacrystals that control the quantum statistics of multiphoton light (co-first author, <em>Nature</em> 2026).</li>
+                                        <li>Led the build and integration of a quantum-plasmonic hydrogen sensor: hydrogen calibration, LabVIEW-synchronized acquisition and photon-number-resolving detection, reaching ~100&times; faster detection (first author, <em>Nature Communications</em>, accepted in principle).</li>
+                                        <li>Co-authored published research on multiphoton quantum reservoirs for multidimensional information processing with OAM and polarization.</li>
+                                        <li>Contributed to plasmonic biosensing, homodyne phase measurement and photonic-waveguide information processing projects.</li>
+                                    </ul>
+                                    <div class="exp-links"><a href="project.html#plasmonic-metacrystals">Metacrystals <i class="fas fa-arrow-right"></i></a><a href="project.html#hydrogen-sensing">Hydrogen sensing <i class="fas fa-arrow-right"></i></a><a href="project.html#quantum-reservoir">Quantum reservoirs <i class="fas fa-arrow-right"></i></a></div>
+                                </div>
+                            </div>
+                            <div class="edu-item animate-on-scroll">
+                                <div class="edu-dot"></div>
+                                <div class="edu-card glass-card">
+                                    <div class="edu-top">
+                                        <h3>Graduate Teaching Assistant</h3>
+                                        <span class="edu-years">2020 &ndash; 2023</span>
+                                    </div>
+                                    <p class="edu-school"><i class="fas fa-briefcase"></i> Louisiana State University (2021&ndash;2023) &middot; UT Rio Grande Valley (2020&ndash;2021)</p>
+                                    <ul class="exp-list">
+                                        <li>Taught undergraduate laboratories in experimental techniques, instrumentation, data analysis and simulation-based experiments.</li>
+                                        <li>Delivered lectures, coursework and online laboratory instruction.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="edu-item animate-on-scroll">
+                                <div class="edu-dot"></div>
+                                <div class="edu-card glass-card">
+                                    <div class="edu-top">
+                                        <h3>Graduate Research Assistant</h3>
+                                        <span class="edu-years">2019 &ndash; 2020</span>
+                                    </div>
+                                    <p class="edu-school"><i class="fas fa-briefcase"></i> University of Texas Rio Grande Valley</p>
+                                    <ul class="exp-list">
+                                        <li>Designed, 3D-printed and measured a tunable non-Hermitian acoustic filter, validating it against COMSOL simulations.</li>
+                                        <li>Observed robust zero-energy extended states in a lossy acoustic waveguide through controlled-disorder and transmission measurements (first author, <em>Phys. Rev. Applied</em> 2023).</li>
+                                    </ul>
+                                    <div class="exp-links"><a href="project.html#acoustic-non-hermitian">M.S. research <i class="fas fa-arrow-right"></i></a></div>
+                                </div>
+                            </div>
+                            <div class="edu-item animate-on-scroll">
+                                <div class="edu-dot"></div>
+                                <div class="edu-card glass-card">
+                                    <div class="edu-top">
+                                        <h3>High School Physics Teacher</h3>
+                                        <span class="edu-years">2018 &ndash; 2019</span>
+                                    </div>
+                                    <p class="edu-school"><i class="fas fa-briefcase"></i> Cardiff International School, Dhaka, Bangladesh</p>
+                                    <ul class="exp-list"><li>Taught theoretical and experimental physics to O-Level and A-Level students under the British curriculum.</li></ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <!-- NEW: Card for the Award Photo -->
-                <div class="award-photo-card glass-card animate-on-scroll">
-                    <h3 class="photo-title">A Proud Moment</h3>
-                    <div class="photo-wrapper">
-                        <img src="assets/achive.jpg" alt="A memorable moment - Receiving award at TDTU 2023">
-                    </div>
-                    <p class="photo-caption">Receiving the design award at Ton Duc Thang University, 2023.</p>
-                </div>
-
-                <!-- NEW: Extracurricular Certificates Section -->
-                <h3 class="section-subtitle animate-on-scroll">Extracurricular Certificates</h3>
-                <div class="certificates-grid">
-                    <div class="certificate-card glass-card animate-on-scroll">
-                        <div class="certificate-image">
-                            <img src="assets/certificate/TranHuuDat_VibeCoding.png" alt="Chứng nhận Vibe Coding">
-                        </div>
-                        <h4 class="certificate-title">Chứng nhận: Vibe Coding</h4>
-                        <a href="javascript:void(0)" class="btn-view-cert btn-pdf-modal"
-                            data-cert="assets/certificate/TranHuuDat_VibeCoding.png">
-                            View Certificate <i class="fas fa-certificate"></i>
-                        </a>
-                    </div>
-
-                    <div class="certificate-card glass-card animate-on-scroll">
-                        <div class="certificate-image">
-                            <img src="assets/certificate/TranHuuDat_XayDungDuAnCaNhan.png"
-                                alt="Chứng nhận Xây Dựng Dự Án Cá Nhân">
-                        </div>
-                        <h4 class="certificate-title">Chứng nhận: Xây Dựng Dự Án Cá Nhân</h4>
-                        <a href="javascript:void(0)" class="btn-view-cert btn-pdf-modal"
-                            data-cert="assets/certificate/TranHuuDat_XayDungDuAnCaNhan.png">
-                            View Certificate <i class="fas fa-certificate"></i>
-                        </a>
-                    </div>
-
-                    <div class="certificate-card glass-card animate-on-scroll">
-                        <div class="certificate-image">
-                            <img src="assets/certificate/TranHuuDat_GitWorkReady.jpg" alt="Chứng nhận Git Work Ready">
-                        </div>
-                        <h4 class="certificate-title">Chứng nhận: Git Work Ready</h4>
-                        <a href="javascript:void(0)" class="btn-view-cert btn-pdf-modal"
-                            data-cert="assets/certificate/TranHuuDat_GitWorkReady.jpg">
-                            View Certificate <i class="fas fa-certificate"></i>
-                        </a>
-                    </div>
-
-                </div>
-
             </div>
         </section>
 
         <!-- ====================================================== -->
-        <!-- Section 6: Experience (ĐÃ CẬP NHẬT CHO BẠN) -->
+        <!-- Section 6: Publications, Talks & Awards -->
         <!-- ====================================================== -->
-        <section id="experience" class="content-section">
+        <section id="publications" class="content-section">
             <div class="container">
                 <div class="section-header animate-on-scroll">
-                    <div class="section-badge">My professional journey</div>
-                    <h2 class="section-title">Experience & Education</h2>
+                    <div class="section-badge">Papers, presentations and recognition</div>
+                    <h2 class="section-title">Publications, Talks &amp; Awards</h2>
                     <div class="title-underline"></div>
                 </div>
-                <div class="timeline">
-                    <!-- Timeline Item 1: Học vấn -->
-                    <div class="timeline-item animate-on-scroll">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content glass-card">
-                            <h3>Bachelor of Software Engineering</h3>
-                            <p class="timeline-meta">Ton Duc Thang University | 2022 - 2026</p>
-                            <p>Building a strong foundation in computer science, algorithms, and web development
-                                principles, while maintaining a GPA of 7.8/10.</p>
+
+                <h3 class="pub-col-title"><i class="fas fa-book-open"></i> Publications</h3>
+                <div class="pub-list">
+                    <article class="pub-card glass-card animate-on-scroll">
+                        <div class="pub-year">2026</div>
+                        <div class="pub-body">
+                            <div class="pub-tags"><span class="pub-badge pub-badge--pub">Published</span><span class="pub-role">Co-first author</span></div>
+                            <h3>Quantum statistical plasmonic metacrystals</h3>
+                            <p class="pub-authors">C. You, R. B. Dawkins, <strong>J. Ferdous</strong>, M. M. Hasan, A. Singh, Z. Zhuang, A. Wilberg, I. Baum, B. Bertoni, M. Hong &amp; O. S. Maga&ntilde;a-Loaiza</p>
+                            <p class="pub-journal"><em>Nature</em>, 655, 885&ndash;891</p>
+                            <div class="pub-links"><a href="https://doi.org/10.1038/s41586-026-10782-3" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i> Paper</a><a href="https://www.nature.com/articles/d41586-026-02038-x" target="_blank" rel="noopener"><i class="fas fa-newspaper"></i> News &amp; Views</a><a href="https://phys.org/news/2026-07-physicists-room-temperature-quantum-material.html" target="_blank" rel="noopener"><i class="fas fa-newspaper"></i> Phys.org</a><a href="https://www.sciencedaily.com/releases/2026/08/260806050706.htm" target="_blank" rel="noopener"><i class="fas fa-newspaper"></i> ScienceDaily</a><a href="https://www.lsu.edu/science/news/2026/07/rt-quantum-material.php" target="_blank" rel="noopener"><i class="fas fa-newspaper"></i> LSU News</a><a href="project.html#plasmonic-metacrystals"><i class="fas fa-arrow-right"></i> Project summary</a></div>
+                        </div>
+                    </article>
+                    <article class="pub-card glass-card animate-on-scroll">
+                        <div class="pub-year">2026</div>
+                        <div class="pub-body">
+                            <div class="pub-tags"><span class="pub-badge pub-badge--review">Accepted in principle</span><span class="pub-role">First author</span></div>
+                            <h3>Scalable quantum sensing with robust multiparticle plasmonic systems</h3>
+                            <p class="pub-authors"><strong>J. Ferdous</strong>, R. B. Dawkins, C. Bachar, M. Hong, Y. Mu, K. N. Alhassan, C. You, K. M. McPeak &amp; O. S. Maga&ntilde;a-Loaiza</p>
+                            <p class="pub-journal"><em>Nature Communications</em></p>
+                            <div class="pub-links"><a href="project.html#hydrogen-sensing"><i class="fas fa-arrow-right"></i> Project summary</a></div>
+                        </div>
+                    </article>
+                    <article class="pub-card glass-card animate-on-scroll">
+                        <div class="pub-year">2026</div>
+                        <div class="pub-body">
+                            <div class="pub-tags"><span class="pub-badge pub-badge--pub">Published</span><span class="pub-role">Co-author</span></div>
+                            <h3>Multiphoton quantum reservoirs for robust multidimensional computing</h3>
+                            <p class="pub-authors">M. Hong, M. A. Quiroz-Juarez, R. B. Dawkins, F. Mostafavi, <strong>J. Ferdous</strong>, A. Wilberg, B. M. Rodriguez-Lara, J. Woodring, C. You, R. de J. Le&oacute;n-Montiel &amp; O. S. Maga&ntilde;a-Loaiza</p>
+                            <p class="pub-journal"><em>Advanced Science</em>, e77225</p>
+                            <div class="pub-links"><a href="https://doi.org/10.1002/advs.77225" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i> Paper</a><a href="project.html#quantum-reservoir"><i class="fas fa-arrow-right"></i> Project summary</a></div>
+                        </div>
+                    </article>
+                    <article class="pub-card glass-card animate-on-scroll">
+                        <div class="pub-year">2025</div>
+                        <div class="pub-body">
+                            <div class="pub-tags"><span class="pub-badge pub-badge--pub">Published</span><span class="pub-role">Co-author</span></div>
+                            <h3>Multiphoton quantum imaging using natural light</h3>
+                            <p class="pub-authors">F. Mostafavi, M. Hong, R. B. Dawkins, <strong>J. Ferdous</strong>, I. Baum, R.-B. Jin, R. de J. Le&oacute;n-Montiel, C. You &amp; O. S. Maga&ntilde;a-Loaiza</p>
+                            <p class="pub-journal"><em>Applied Physics Reviews</em>, 12, 011424</p>
+                            <div class="pub-links"><a href="https://doi.org/10.1063/5.0234062" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i> Paper</a><a href="project.html#quantum-imaging"><i class="fas fa-arrow-right"></i> Project summary</a></div>
+                        </div>
+                    </article>
+                    <article class="pub-card glass-card animate-on-scroll">
+                        <div class="pub-year">2024</div>
+                        <div class="pub-body">
+                            <div class="pub-tags"><span class="pub-badge pub-badge--pub">Published</span><span class="pub-role">First author</span></div>
+                            <h3>Emergence of multiphoton quantum coherence by light propagation</h3>
+                            <p class="pub-authors"><strong>J. Ferdous</strong>, M. Hong, R. B. Dawkins, F. Mostafavi, A. Oktyabrskaya, C. You, R. de J. Le&oacute;n-Montiel &amp; O. S. Maga&ntilde;a-Loaiza</p>
+                            <p class="pub-journal"><em>ACS Photonics</em>, 11, 3197&ndash;3204</p>
+                            <div class="pub-links"><a href="https://doi.org/10.1021/acsphotonics.4c00558" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i> Paper</a><a href="project.html#multiphoton-coherence"><i class="fas fa-arrow-right"></i> Project summary</a></div>
+                        </div>
+                    </article>
+                    <article class="pub-card glass-card animate-on-scroll">
+                        <div class="pub-year">2024</div>
+                        <div class="pub-body">
+                            <div class="pub-tags"><span class="pub-badge pub-badge--pub">Published</span><span class="pub-role">Co-author</span></div>
+                            <h3>Isolating the classical and quantum coherence of a multiphoton system</h3>
+                            <p class="pub-authors">C. You, M. Hong, F. Mostafavi, <strong>J. Ferdous</strong>, R. de J. Le&oacute;n-Montiel, R. B. Dawkins &amp; O. S. Maga&ntilde;a-Loaiza</p>
+                            <p class="pub-journal"><em>PhotoniX</em>, 5, 39</p>
+                            <div class="pub-links"><a href="https://doi.org/10.1186/s43074-024-00153-4" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i> Paper</a><a href="project.html#photonix-coherence"><i class="fas fa-arrow-right"></i> Project summary</a></div>
+                        </div>
+                    </article>
+                    <article class="pub-card glass-card animate-on-scroll">
+                        <div class="pub-year">2023</div>
+                        <div class="pub-body">
+                            <div class="pub-tags"><span class="pub-badge pub-badge--pub">Published</span><span class="pub-role">First author</span></div>
+                            <h3>Observation of robust zero-energy extended states</h3>
+                            <p class="pub-authors"><strong>J. Ferdous</strong>, C. Yuce, A. Al&ugrave; &amp; H. Ramezani</p>
+                            <p class="pub-journal"><em>Physical Review Applied</em>, 19, L061002</p>
+                            <div class="pub-links"><a href="https://doi.org/10.1103/PhysRevApplied.19.L061002" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i> Paper</a><a href="project.html#acoustic-non-hermitian"><i class="fas fa-arrow-right"></i> Project summary</a></div>
+                        </div>
+                    </article>
+                    <article class="pub-card glass-card animate-on-scroll">
+                        <div class="pub-year">2021</div>
+                        <div class="pub-body">
+                            <div class="pub-tags"><span class="pub-badge pub-badge--pub">Published</span><span class="pub-role">Co-first author</span></div>
+                            <h3>Tunable non-Hermitian acoustic filter</h3>
+                            <p class="pub-authors">S. Puri, <strong>J. Ferdous</strong>, A. Shakeri, A. Basiri, M. Dubois &amp; H. Ramezani</p>
+                            <p class="pub-journal"><em>Physical Review Applied</em>, 16, 014012</p>
+                            <div class="pub-links"><a href="https://doi.org/10.1103/PhysRevApplied.16.014012" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i> Paper</a><a href="project.html#acoustic-non-hermitian"><i class="fas fa-arrow-right"></i> Project summary</a></div>
+                        </div>
+                    </article>
+                </div>
+                <p class="pub-scholar animate-on-scroll"><a href="https://scholar.google.com/citations?user=54aQ7RgAAAAJ&amp;hl=en" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i> All publications on Google Scholar</a></p>
+
+                <div class="pub-columns">
+                    <div class="glass-card pub-panel animate-on-scroll">
+                        <h3 class="pub-col-title"><i class="fas fa-microphone"></i> Talks &amp; posters</h3>
+                        <div class="talk-group">
+                            <h4>Plasmonic metacrystals for quantum control</h4>
+                            <ul class="talk-list"><li><span class="talk-type talk-type--oral">Oral</span><span class="talk-event">Frontiers in Optics + Laser Science (FiO+LS) 2026<small>Rochester, NY &middot; 2026 &middot; conference paper to be published</small></span></li></ul>
+                        </div>
+                        <div class="talk-group">
+                            <h4>Robust multiparticle quantum plasmonics for gas sensing</h4>
+                            <ul class="talk-list"><li><span class="talk-type talk-type--poster">Poster</span><span class="talk-event">Frontiers in Optics + Laser Science (FiO+LS) 2026<small>Rochester, NY &middot; 2026 &middot; conference paper to be published</small></span></li></ul>
+                        </div>
+                        <div class="talk-group">
+                            <h4><a href="https://ieeexplore.ieee.org/abstract/document/11151427" target="_blank" rel="noopener">Nonclassical multiphoton plasmonic sensing</a></h4>
+                            <ul class="talk-list"><li><span class="talk-type talk-type--oral">Oral</span><span class="talk-event">IEEE Research and Applications of Photonics in Defense (RAPID)<small>2025</small></span></li></ul>
+                        </div>
+                        <div class="talk-group">
+                            <h4><a href="https://opg.optica.org/abstract.cfm?uri=LAOP-2024-M3B.4" target="_blank" rel="noopener">Observation of the van Cittert&ndash;Zernike modification of quantum coherence</a></h4>
+                            <ul class="talk-list"><li><span class="talk-type talk-type--oral">Oral</span><span class="talk-event">Latin America Optics &amp; Photonics Conference (LAOP)<small>2024</small></span></li></ul>
+                        </div>
+                        <div class="talk-group">
+                            <h4>Quantum photonic technologies based on natural light</h4>
+                            <ul class="talk-list"><li><span class="talk-type talk-type--oral">Oral</span><span class="talk-event">LSU Institute for Energy Innovation<small>2024</small></span></li></ul>
+                        </div>
+                        <div class="talk-group">
+                            <h4>Inducing quantum coherence by light propagation</h4>
+                            <ul class="talk-list"><li><span class="talk-type talk-type--oral">Oral</span><span class="talk-event">LSU Graduate Research Conference<small>2023</small></span></li></ul>
                         </div>
                     </div>
-                    <!-- Timeline Item 2: Kinh nghiệm làm việc -->
-                    <div class="timeline-item animate-on-scroll">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content glass-card">
-                            <h3>Invigilator (Part-time)</h3>
-                            <p class="timeline-meta">Ton Duc Thang University | 2024 - Present</p>
-                            <p>Ensured the integrity of university examinations, developing strong discipline, attention
-                                to detail, and the ability to perform under pressure.</p>
-                        </div>
-                    </div>
-                    <!-- Timeline Item 3: Dự án cá nhân -->
-                    <div class="timeline-item animate-on-scroll">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content glass-card">
-                            <h3>Personal Project Development</h3>
-                            <p class="timeline-meta">GitHub | 2022 - Present</p>
-                            <p>Continuously developing full-stack applications and interactive tools to sharpen my
-                                skills and explore new technologies.</p>
-                        </div>
+                    <div class="glass-card pub-panel animate-on-scroll">
+                        <h3 class="pub-col-title"><i class="fas fa-trophy"></i> Awards</h3>
+                        <ul class="award-list"><li><i class="fas fa-award"></i><div><strong>Presidential Graduate Research Assistantship Award</strong><small>University of Texas Rio Grande Valley &middot; 2019</small></div></li></ul>
+                        <h3 class="pub-col-title pub-col-title--spaced"><i class="fas fa-user-check"></i> Peer review</h3>
+                        <ul class="award-list"><li><i class="fas fa-file-signature"></i><div><strong>Journal referee</strong><small>Physical Review A &middot; Quantum Science and Technology &middot; Journal of the Optical Society of America B &middot; Europhysics Letters</small></div></li></ul>
+                        <h3 class="pub-col-title pub-col-title--spaced"><i class="fas fa-users"></i> Leadership &amp; service</h3>
+                        <ul class="award-list"><li><i class="fas fa-globe-americas"></i><div><strong>International Student Liaison</strong><small>Department of Physics &amp; Astronomy, LSU &middot; 2022&ndash;2023</small></div></li><li><i class="fas fa-camera"></i><div><strong>Media Coordinator</strong><small>Bangladesh Students Association, LSU &middot; 2025&ndash;2026</small></div></li></ul>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- ====================================================== -->
-        <!-- Section 7:  Section Blog -->
-        <!-- ====================================================== -->
-        <section id="blog" class="content-section">
-            <div class="container">
-                <div class="section-header animate-on-scroll">
-                    <div class="section-badge">Sharing my knowledge</div>
-                    <h2 class="section-title">From The Blog (Maintenance)</h2>
-                    <div class="title-underline"></div>
-                </div>
-
-                <!-- Lưới chứa các bài blog nổi bật -->
-                <div class="blog-grid">
-                    <!-- Bài Blog 1: Mixamo & Unity -->
-                    <a href="blog/post-mixamo-unity.html" class="blog-post-card glass-card animate-on-scroll">
-                        <div class="blog-card-image">
-                            <!-- Bạn có thể tạo 1 ảnh thumbnail cho bài viết này -->
-                            <img src="assets/mixamo.png" alt="A 3D character in Unity editor">
-                        </div>
-                        <div class="blog-card-content">
-                            <div class="blog-card-tags">
-                                <span>Unity</span><span>Game Dev</span>
-                            </div>
-                            <h3>Guide: Using Mixamo Assets in Unity</h3>
-                            <p>A standard workflow to correctly download and implement 3D characters and animations from
-                                Mixamo into your Unity projects.</p>
-                            <span class="blog-card-link">Read More <i class="fas fa-arrow-right"></i></span>
-                        </div>
-                    </a>
-
-                    <!-- === BÀI VIẾT MỚI: UNITY & GITHUB PAGES === -->
-                    <a href="blog/post-unity-githubpages.html" class="blog-post-card glass-card animate-on-scroll">
-                        <div class="blog-card-image">
-                            <img src="assets/unity-githubpage.png" alt="Unity logo and GitHub logo">
-                        </div>
-                        <div class="blog-card-content">
-                            <div class="blog-card-tags">
-                                <span>Unity</span><span>Game Dev</span><span>GitHub</span>
-                            </div>
-                            <h3>Hướng Dẫn: Deploy Game Unity Lên GitHub Pages</h3>
-                            <p>Quy trình chi tiết để chia sẻ game Unity của bạn lên web miễn phí và cách khắc phục lỗi
-                                không tải được game phổ biến nhất.</p>
-                            <span class="blog-card-link">Read More <i class="fas fa-arrow-right"></i></span>
-                        </div>
-                    </a>
-
-                    <!-- Bài Blog 3 (Ví dụ) -->
-                    <a href="blog/getting-started-docker.html" class="blog-post-card glass-card animate-on-scroll">
-                        <div class="blog-card-image">
-                            <img src="assets/docker.png" alt="Docker container logos">
-                        </div>
-                        <div class="blog-card-content">
-                            <div class="blog-card-tags">
-                                <span>Docker</span><span>DevOps</span>
-                            </div>
-                            <h3>Getting Started with Docker for Web Devs</h3>
-                            <p>Learn how containerization with Docker can streamline your development workflow, ensuring
-                                consistency across environments.</p>
-                            <span class="blog-card-link">Read More <i class="fas fa-arrow-right"></i></span>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Nút xem tất cả bài viết -->
-                <div class="view-all-posts-container animate-on-scroll">
-                    <a href="blog.html" class="btn btn-secondary">View All Posts</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- ====================================================== -->
-        <!-- Section 8: Contact (ĐÃ CẬP NHẬT CHO BẠN) -->
+        <!-- Section 7: Contact -->
         <!-- ====================================================== -->
         <section id="contact" class="content-section">
             <div class="container">
@@ -786,118 +695,45 @@
                             <i class="fas fa-envelope"></i>
                             <div>
                                 <span>Email</span>
-                                <a href="mailto:tranhuudat.cv@gmail.com">tranhuudat.cv@gmail.com</a>
+                                <a href="mailto:jferdo2@lsu.edu">jferdo2@lsu.edu</a>
                             </div>
                         </div>
                         <div class="contact-item">
                             <i class="fab fa-linkedin"></i>
                             <div>
                                 <span>LinkedIn</span>
-                                <a href="https://linkedin.com/in/nagee-zaman"
-                                    target="_blank">linkedin.com/in/nagee-zaman</a>
+                                <a href="https://www.linkedin.com/in/jannatul-ferdous-139730117/" target="_blank" rel="noopener">linkedin.com/in/jannatul-ferdous-139730117</a>
                             </div>
                         </div>
                         <div class="contact-item">
-                            <i class="fab fa-github"></i>
+                            <i class="fas fa-graduation-cap"></i>
                             <div>
-                                <span>GitHub</span>
-                                <a href="https://github.com/nagee-zaman"
-                                    target="_blank">github.com/nagee-zaman</a>
+                                <span>Google Scholar</span>
+                                <a href="https://scholar.google.com/citations?user=54aQ7RgAAAAJ&amp;hl=en" target="_blank" rel="noopener">scholar.google.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-orcid"></i>
+                            <div>
+                                <span>ORCID</span>
+                                <a href="https://orcid.org/0009-0000-1289-699X" target="_blank" rel="noopener">0009-0000-1289-699X</a>
                             </div>
                         </div>
                         <h3 class="status-title">Current Status</h3>
                         <div class="contact-status">
                             <span class="green-dot"></span>
-                            Open for Web Developer Internship opportunities
+                            Open to experimental R&amp;D roles from May 2027
                         </div>
                     </div>
-                    <!-- Form liên hệ - Bạn cần một dịch vụ backend như Formspree để nó hoạt động -->
-                    <form class="contact-form glass-card animate-on-scroll" action="https://formspree.io" method="POST">
-                        <h3>Send Me a Message</h3>
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" rows="5" placeholder="Your Message"
-                                required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message <i
-                                class="fas fa-paper-plane"></i></button>
-                    </form>
                 </div>
             </div>
         </section>
     </main>
-
-    </main>
     <footer id="footer-placeholder" class="main-footer"></footer>
 
-    <div id="pdfModal" class="pdf-modal-overlay">
-        <div class="pdf-modal-container">
-            <div class="pdf-modal-header">
-                <h3 id="pdfModalTitle">Certificate Viewer</h3>
-                <button class="pdf-modal-close">&times;</button>
-            </div>
-            <div class="pdf-modal-body">
-                <div class="zoom-container">
-                    <img id="certImage" src="" alt="Certificate">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <audio id="audio-source"></audio>
-    <script src="js/playlist.js"></script>
-    <script src="js/scripts.js"></script>
-    <!-- === TẢI CÁC THÀNH PHẦN CHUNG (Header, Footer) === -->
-    <script src="js/load-components.js"></script>
-    <!-- === TẢI CÁC SECTION CHUNG === -->
-    <script src="js/load-sections.js"></script>
-    <script>
-        // Christmas specific scripts
-        document.addEventListener('DOMContentLoaded', () => {
-            // Snowfall
-            const snowContainer = document.querySelector('.snow-container');
-            if (snowContainer) {
-                for (let i = 0; i < 150; i++) {
-                    const snowflake = document.createElement('div');
-                    snowflake.classList.add('snowflake');
-                    const size = Math.random() * 4 + 2;
-                    snowflake.style.width = size + 'px';
-                    snowflake.style.height = size + 'px';
-                    snowflake.style.left = Math.random() * 100 + 'vw';
-                    snowflake.style.animationDelay = Math.random() * -10 + 's';
-                    snowflake.style.animationDuration = 5 + Math.random() * 5 + 's';
-                    snowflake.style.opacity = Math.random();
-                    snowContainer.appendChild(snowflake);
-                }
-            }
-
-
-            const dropdownToggle = document.querySelector('.theme-switcher-dropdown .dropdown-toggle');
-            const dropdownMenu = document.querySelector('.theme-switcher-dropdown .dropdown-menu');
-
-            if (dropdownToggle && dropdownMenu) {
-                dropdownToggle.addEventListener('click', () => {
-                    dropdownMenu.classList.toggle('show');
-                });
-
-                window.addEventListener('click', (event) => {
-                    if (!event.target.matches('.dropdown-toggle') && !event.target.matches('.dropdown-toggle i')) {
-                        if (dropdownMenu.classList.contains('show')) {
-                            dropdownMenu.classList.remove('show');
-                        }
-                    }
-                });
-            }
-        });
-    </script>
+    <script src="static/js/scripts.js"></script>
+    <!-- Shared header and footer -->
+    <script src="static/js/load-components.js"></script>
 </body>
 
 </html>

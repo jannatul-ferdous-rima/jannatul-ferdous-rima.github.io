@@ -1,0 +1,158 @@
+/* ====================================================== */
+/* --- ABOUT ME SECTION --- */
+/* ====================================================== */
+#about {
+    background-image:
+        linear-gradient(rgba(8, 10, 14, 0.72), rgba(8, 10, 14, 0.78)),
+        url('../../assets/about_optics_background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+.about-image-wrapper {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.about-image-wrapper img {
+    width: 100%;
+    display: block;
+    margin-bottom: 3.0rem;
+    border-radius: 16px;
+    border: 2px solid var(--gradient-green);
+}
+
+.status-tag {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid var(--border-color);
+}
+
+.about-text-content p {
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.info-box-wrapper {
+    margin-top: 2rem;
+    padding: 1.5rem;
+}
+
+.info-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.info-label {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+    display: block;
+}
+
+.info-box p {
+    color: var(--text-primary);
+    font-weight: 500;
+    margin: 0;
+}
+
+.available-status {
+    color: var(--gradient-green);
+}
+
+.btn-download-resume {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s;
+}
+
+.btn-download-resume:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+/* --- Photo captions & highlight list (Oct 2026) --- */
+.about-photo {
+    margin: 0 0 2rem 0;
+}
+
+.about-image-wrapper .about-photo img {
+    margin-bottom: 0.6rem;
+}
+
+.about-photo figcaption {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.45;
+    text-align: center;
+}
+
+.about-highlights {
+    list-style: none;
+    margin: 0 0 1.25rem 0;
+    padding: 0;
+}
+
+.about-highlights li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+}
+
+.about-highlights li::before {
+    content: '';
+    position: absolute;
+    left: 0.25rem;
+    top: 0.65em;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--gradient-green);
+}
+
+.about-highlights strong {
+    color: var(--gradient-green);
+    font-weight: 600;
+}
+
+.info-box p a {
+    color: var(--text-primary);
+    overflow-wrap: anywhere;
+}
+
+.info-box p a:hover {
+    color: var(--gradient-green);
+}
+
+@media (max-width: 480px) {
+    .info-box {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}

@@ -1,0 +1,269 @@
+/* ====================================================== */
+/* --- NEW FEATURED PROJECT SHOWCASE STYLES --- */
+/* ====================================================== */
+
+/* ====================================================== */
+/* --- FEATURED PROJECTS - ALTERNATING LAYOUT STYLES --- */
+/* ====================================================== */
+#projects .container {
+    max-width: 1400px;
+}
+
+.project-showcase-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr;
+    /* Showcase column on the left, details column on the right. */
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 4rem;
+    /* Increase the distance between projects. */
+}
+
+.project-showcase-grid:last-child {
+    margin-bottom: 0;
+    /* Remove margin for the last project */
+}
+
+/* --- The Main Card (Showcase) --- */
+.showcase-card {
+    background-color: #adabab;
+    color: #121212;
+    border-radius: 1.5rem;
+    padding: 0.5rem;
+    border-top: 8px solid var(--gradient-green);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.showcase-header {
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: #888;
+}
+
+.showcase-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* gap: 2rem; */
+    align-items: center;
+}
+
+.text-features h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+.text-features .feature-title {
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.text-features ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.text-features li {
+    margin-bottom: 1rem;
+    color: #555;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.text-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--gradient-purple);
+    font-weight: bold;
+}
+
+.image-gallery .showcase-img {
+    width: 100%;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.project-paper-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: -2.0rem;
+    padding: 0.6rem 0.7rem;
+    border: 1px solid #22C55E;
+    border-radius: 1.5rem;
+    color: #22C55E;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.project-paper-link:hover {
+    background: #22C55E;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* --- Figma Embed Styles --- */
+.figma-embed-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    margin-top: 1.5rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--border-color);
+}
+
+.figma-embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* --- The Details Column --- */
+.details-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: right;
+}
+
+.details-column h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    text-align: right;
+}
+
+.details-column .project-category {
+    color: var(--gradient-green);
+    font-weight: 600;
+    text-align: right;
+    margin-top: -1.5rem;
+}
+
+.details-column .project-affiliation {
+    color: var(--text-secondary);
+    font-weight: 200;
+    text-align: right;
+    margin-top: -1.5rem;
+    margin-bottom: 0.01rem;
+}
+
+.project-tags {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-top: -0.5rem;
+}
+
+.project-tags span {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    padding: 0.4rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+}
+
+.description-box {
+    padding: 0.5rem;
+    color: var(--text-secondary);
+    text-align: left;
+    margin-top: -0.5rem;
+}
+
+.project-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    font-size: 1.25rem;
+    /* margin-top: -0.5rem; */
+}
+
+/* --- STYLES FOR THE REVERSED LAYOUT --- */
+.layout-reversed {
+    grid-template-columns: 1.5fr 1.5fr;
+    /* Reverse column ratio */
+}
+
+.layout-reversed .showcase-card {
+    grid-column: 2 / 3;
+    /* Move card to column 2 */
+    grid-row: 1 / 2;
+}
+
+.layout-reversed .details-column {
+    grid-column: 1 / 2;
+    /* Move details to column 1 */
+    grid-row: 1 / 2;
+}
+
+.layout-reversed .details-column h2,
+.layout-reversed .details-column .project-category,
+.layout-reversed .description-box {
+    text-align: right;
+    /* Change text direction */
+}
+
+.layout-reversed .project-tags,
+.layout-reversed .project-links {
+    justify-content: flex-end;
+    /* Redirect buttons */
+}
+
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 992px) {
+
+    .project-showcase-grid,
+    .layout-reversed {
+        grid-template-columns: 1fr;
+        /*Move everything to one column. */
+    }
+
+    .layout-reversed .showcase-card,
+    .layout-reversed .details-column {
+        /* Reset column position on mobile */
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .details-column {
+        margin-top: 2rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .details-column h2,
+    .details-column .project-category,
+    .description-box,
+    .layout-reversed .details-column h2,
+    .layout-reversed .details-column .project-category,
+    .layout-reversed .description-box {
+        text-align: center;
+        /* Căn giữa tất cả text */
+    }
+
+    .project-tags,
+    .project-links,
+    .layout-reversed .project-tags,
+    .layout-reversed {
+        justify-content: center;
+        /* Căn giữa tất cả nút */
+    }
+    .layout-reversed .project-links {
+        justify-content: center;
+        /* margin-top: -0.5rem; */
+    }
+}

@@ -1,3 +1,6 @@
-# IDE settings
-.vscode/*
-!.vscode/settings.json
+.DS_Store
+__pycache__/
+
+# Local-only material (not published)
+_originals/
+resources/

@@ -1,0 +1,568 @@
+/* ====================================================== */
+/* --- HERO SECTION (LAYOUT) --- */
+/* ====================================================== */
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 1rem;
+}
+
+.hero-background {
+    position: absolute;
+    inset: 0;
+    background-image: url('../../assets/hero_background_optics.png');
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+    opacity: 1.0;
+    overflow: hidden;
+    will-change: transform;
+}
+
+.hero-background::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(5, 8, 18, 0.78) 0%, rgba(5, 8, 18, 0.66) 52%, rgba(5, 8, 18, 0.78) 100%);
+    z-index: -1;
+}
+
+/* Floating Shapes */
+.shape {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    z-index: -1;
+    opacity: 0.4;
+    will-change: transform;
+}
+
+.shape-1 {
+    width: 230px;
+    height: 230px;
+    background: var(--gradient-green);
+    top: -10%;
+    left: -10%;
+}
+
+.shape-2 {
+    width: 300px;
+    height: 300px;
+    background: var(--gradient-green);
+    bottom: 10%;
+    right: -5%;
+}
+
+.shape-3 {
+    width: 250px;
+    height: 250px;
+    background: var(--gradient-green);
+    top: 40%;
+    left: 45%;
+}
+
+/* BUG FIX: Switch to CSS Grid for stable layout. */
+.hero-container {
+    display: grid;
+    /* grid-template-columns: 500px auto; */
+    grid-template-columns: 500px 1fr;
+    /* Column 1 for card, column 2 for text. */
+    align-items: center;
+    /* Center the items vertically. */
+    gap: 3rem;
+    /*Increase the spacing between the card and the text. */
+    width: 100%;
+    position: relative;
+}
+
+/* BUG FIX:  position absolute */
+.profile-card-container {
+    /* position: absolute; */
+    width: 500px;
+    height: auto;
+    /* left: -10%; */
+    transform: translateX(-80px);
+    /* will-change: transform; */
+}
+
+.profile-card .profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    text-align: center;
+}
+
+.profile-info {
+    text-align: center;
+}
+
+.avatar-wrapper {
+    position: relative;
+}
+
+.avatar {
+    width: 16rem;
+    height: 16rem;
+    border-radius: 20%;
+    object-fit: cover;
+    border: 2px solid var(--gradient-green);
+}
+
+/* .status-indicator.online {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    width: 14px;
+    height: 14px;
+    background-color: #22c55e;
+    border-radius: 50%;
+    border: 3px solid var(--bg-card);
+} */
+
+.job-title {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.profile-details {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.profile-details p {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-divider {
+    border: none;
+    height: 1px;
+    background-color: var(--border-color);
+    margin: 1rem 0;
+}
+
+.discord-status {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.discord-status .fa-discord {
+    font-size: 1.25rem;
+    color: #7289DA;
+}
+
+.discord-info h4 {
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.discord-info p {
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    line-height: 1;
+}
+
+/* BUG FIX: Switch text-align to left and remove margin auto */
+.hero-text-content {
+    text-align: left;
+    max-width: 800px;
+    margin: 0;
+    will-change: transform;
+}
+
+.welcome-badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--border-color);
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-text-content h1 {
+    font-size: clamp(3rem, 7vw, 5.5rem);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 3px 14px rgba(0, 0, 0, 0.85);
+}
+
+.gradient-text {
+    background: linear-gradient(to right, #009000, #39FF14);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-section .hero-text-content .gradient-text {
+    background: linear-gradient(110deg, #a855f7, #e879f9 55%, #f0abfc);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;
+    white-space: nowrap;
+}
+
+.hero-text-content p {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0;
+}
+
+/* Remove margin auto */
+
+/* BUGFIX: Left alignment for buttons */
+.hero-buttons {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    color: var(--gradient-green);
+}
+
+.btn-primary {
+    background: rgba(255, 255, 255, 0.1);;
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+}
+
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+}
+
+/* BUGFIX: Left alignment for social icons */
+.social-links {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+}
+
+.profile-card-container > .social-links {
+    width: 100%;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.social-links a {
+    color: var(--text-secondary);
+    font-size: 1.3rem;
+    width: 52px;
+    height: 52px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--gradient-green);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: var(--gradient-green);
+}
+
+.scroll-down-indicator {
+    position: absolute;
+    bottom: 2rem;
+    left: max(2rem, calc((100vw - 1200px) / 2 + 2rem));
+    width: 24px;
+    height: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 9999px;
+}
+
+.scroll-down-indicator::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    animation: scroll-down-anim 2s infinite;
+}
+
+@keyframes scroll-down-anim {
+    0% {
+        transform: translate(-50%, 0);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    80% {
+        transform: translate(-50%, 16px);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* ====================================================== */
+/* --- RESPONSIVE FIX: keep hero inside the screen on phones/tablets --- */
+/* ====================================================== */
+@media (max-width: 992px) {
+    .hero-section .hero-container {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .hero-section .profile-card-container {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        transform: none;
+    }
+
+    .hero-section .hero-text-content {
+        max-width: 100%;
+        min-width: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-section .hero-text-content h1 {
+        font-size: clamp(2.25rem, 11vw, 3rem);
+    }
+
+    .hero-section .hero-text-content p {
+        font-size: 1.15rem !important;
+    }
+
+    .hero-section .hero-buttons {
+        flex-wrap: wrap;
+    }
+
+    .hero-section .avatar {
+        width: 12rem;
+        height: 12rem;
+    }
+}
+
+/* ====================================================== */
+/* --- FRONT PAGE REFRESH (Oct 2026) --- */
+/* ====================================================== */
+.welcome-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-primary);
+}
+
+.badge-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--gradient-green);
+    box-shadow: 0 0 8px var(--gradient-green);
+}
+
+.hero-text-content .hero-tagline {
+    color: #fff;
+    font-size: 1.35rem;
+    font-weight: 600;
+    line-height: 1.5;
+    max-width: 640px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+}
+
+.hero-section .profile-card {
+    background: rgba(7, 10, 18, 0.84);
+}
+
+.hero-section .profile-info h2,
+.hero-section .job-title,
+.hero-section .profile-details,
+.hero-section .profile-details a,
+.hero-section .welcome-badge,
+.hero-section .hero-stats span {
+    color: #fff;
+    font-weight: 600;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.9);
+}
+
+.hero-section .welcome-badge {
+    background: rgba(7, 10, 18, 0.78);
+    border-color: rgba(255, 255, 255, 0.32);
+}
+
+.hero-stats {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.75rem;
+    margin-top: 2rem;
+    max-width: 680px;
+}
+
+.hero-stats li {
+    background: rgba(7, 10, 18, 0.82);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid var(--border-color);
+    border-radius: 0.75rem;
+    padding: 0.75rem 0.85rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.hero-stats strong {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--gradient-green);
+    line-height: 1.1;
+}
+
+.hero-stats span {
+    font-size: 0.78rem;
+    line-height: 1.35;
+    color: #d4d4d8;
+}
+
+.hero-buttons .btn-primary {
+    background: var(--gradient-green);
+    border-color: var(--gradient-green);
+    color: #0b0b0c;
+}
+
+.hero-buttons .btn-primary:hover {
+    color: #0b0b0c;
+    box-shadow: 0 4px 20px rgba(74, 222, 128, 0.35);
+}
+
+.social-links a {
+    color: #fff;
+}
+
+.profile-details a {
+    color: var(--text-primary);
+}
+
+@media (max-width: 992px) {
+    .hero-stats {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+    .hero-text-content .hero-tagline {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .hero-section .hero-text-content .hero-tagline {
+        font-size: 1.1rem !important;
+    }
+}
+
+/* Mid-size screens (small laptops / tablets landscape): keep card + text inside the screen */
+@media (min-width: 993px) and (max-width: 1280px) {
+    .hero-section .hero-container {
+        grid-template-columns: minmax(0, 420px) minmax(0, 1fr);
+        gap: 2rem;
+    }
+    .hero-section .profile-card-container {
+        width: 100%;
+        height: auto;
+        transform: none;
+    }
+    .hero-section .avatar {
+        width: 13.5rem;
+        height: 13.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-section .scroll-down-indicator {
+        display: none;
+    }
+    .hero-section {
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1280px) {
+    .hero-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .hero-section .scroll-down-indicator {
+        display: none;
+    }
+}
+
+/* Social buttons: green icons, more visible */
+.hero-section .social-links a {
+    width: 46px;
+    height: 46px;
+    font-size: 1.2rem;
+    color: var(--gradient-green);
+    background-color: rgba(18, 18, 18, 0.6);
+    border: 1px solid rgba(74, 222, 128, 0.55);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+.hero-section .social-links a:hover {
+    color: #0b0b0c;
+    background-color: var(--gradient-green);
+    border-color: var(--gradient-green);
+    box-shadow: 0 0 14px rgba(74, 222, 128, 0.45);
+}
+
+/* Keep the nebula inside the hero: the parallax script slides the
+   background down while scrolling, so clip it at the section edge
+   and fade it softly into the page color. */
+.hero-section {
+    overflow: hidden;
+}
+
+.hero-section::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 140px;
+    background: linear-gradient(to bottom, rgba(18, 18, 18, 0), var(--bg-dark));
+    z-index: -1;
+    pointer-events: none;
+}

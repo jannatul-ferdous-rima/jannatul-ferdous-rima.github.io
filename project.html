@@ -1,259 +1,508 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Khám phá các dự án lập trình và thiết kế của Trần Hữu Đạt, từ các nền tảng thương mại điện tử Omacha Shop, BrickShop đến các công cụ học tập tương tác như Aptis Practice." />
-    <title>My Projects | Trần Hữu Đạt</title>
-    <link rel="canonical" href="https://tranhuudat2004.github.io/project.html" />
+    <meta name="description" content="Research projects of Jannatul Ferdous: quantum statistical plasmonic metacrystals, quantum-enhanced hydrogen sensing, multiphoton quantum reservoirs, multiphoton quantum coherence, quantum imaging with natural light, and non-Hermitian acoustics." />
+    <title>Research Projects | Jannatul Ferdous</title>
+    <link rel="canonical" href="https://jannatul-ferdous-rima.github.io/project.html" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="My Projects | Trần Hữu Đạt">
-    <meta property="og:description" content="Khám phá các dự án lập trình và thiết kế của Trần Hữu Đạt, từ các nền tảng thương mại điện tử Omacha Shop, BrickShop đến các công cụ học tập tương tác như Aptis Practice.">
-    <meta property="og:url" content="https://tranhuudat2004.github.io/project.html">
-    <meta property="og:image" content="https://tranhuudat2004.github.io/assets/images/banner-cua-ban.jpg">
+    <meta property="og:title" content="Research Projects | Jannatul Ferdous">
+    <meta property="og:description" content="Experimental quantum photonics research by Jannatul Ferdous at Louisiana State University: plasmonic metacrystals, quantum sensing, quantum imaging and multiphoton quantum coherence.">
+    <meta property="og:url" content="https://jannatul-ferdous-rima.github.io/project.html">
+    <meta property="og:image" content="https://jannatul-ferdous-rima.github.io/assets/Jannatul_Ferdous.jpg">
 
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="My Projects | Trần Hữu Đạt">
-    <meta name="twitter:description" content="Khám phá các dự án lập trình và thiết kế của Trần Hữu Đạt, từ các nền tảng thương mại điện tử Omacha Shop, BrickShop đến các công cụ học tập tương tác như Aptis Practice.">
-    <meta name="twitter:image" content="https://tranhuudat2004.github.io/assets/images/banner-cua-ban.jpg">
-
-    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <!-- Browser Tab Icon -->
+    <link rel="icon" type="image/png" href="assets/Tab_Icon.png" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Link CSS của bạn -->
-    <link rel="stylesheet" href="css/components/base.css" />
-    <link rel="stylesheet" href="css/components/header.css" />
-    <link rel="stylesheet" href="css/components/hero.css" />
-    <link rel="stylesheet" href="css/components/music-player.css" />
-    <link rel="stylesheet" href="css/components/sections.css" />
-    <link rel="stylesheet" href="css/components/about.css" />
-    <link rel="stylesheet" href="css/components/skills.css" />
-    <link rel="stylesheet" href="css/components/projects.css" />
-    <link rel="stylesheet" href="css/components/blog.css" />
-    <link rel="stylesheet" href="css/components/experience.css" />
-    <link rel="stylesheet" href="css/components/contact.css" />
-    <link rel="stylesheet" href="css/components/animations.css" />
-    <link rel="stylesheet" href="css/components/awards.css" />
-    <link rel="stylesheet" href="css/components/footer.css" />
-    <link rel="stylesheet" href="css/components/wakatime.css" />
-    <link rel="stylesheet" href="css/components/featured-projects.css" />
-    <link rel="stylesheet" href="css/components/interactive-skills.css" />
-    <link rel="stylesheet" href="css/components/theme.css" />
-    <link rel="stylesheet" href="css/projects-page.css" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="static/css/base.css" />
+    <link rel="stylesheet" href="static/css/header.css" />
+    <link rel="stylesheet" href="static/css/hero.css" />
+    <link rel="stylesheet" href="static/css/sections.css" />
+    <link rel="stylesheet" href="static/css/about.css" />
+    <link rel="stylesheet" href="static/css/skills.css" />
+    <link rel="stylesheet" href="static/css/projects.css" />
+    <link rel="stylesheet" href="static/css/experience.css" />
+    <link rel="stylesheet" href="static/css/contact.css" />
+    <link rel="stylesheet" href="static/css/animations.css" />
+    <link rel="stylesheet" href="static/css/awards.css" />
+    <link rel="stylesheet" href="static/css/footer.css" />
+    <link rel="stylesheet" href="static/css/featured-projects.css" />
+    <link rel="stylesheet" href="static/css/interactive-skills.css" />
+    <link rel="stylesheet" href="static/css/theme.css" />
+    <link rel="stylesheet" href="static/css/case-study.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
-    <!-- Thanh tiến trình cuộn -->
     <div class="scroll-progress-bar"></div>
-
-    <!-- Header hiện đại (đã cập nhật link) -->
     <header id="header-placeholder" class="main-header"></header>
-    <!-- ====================================================== -->
-    <!-- Music Player Widget -->
-    <!-- ====================================================== -->
-    <div class="music-player-widget">
-        <img src="assets/song-cover.png" alt="Song Cover" class="song-cover" id="song-cover">
-        <div class="song-info">
-            <h4 id="song-title">Điều chưa nói</h4>
-            <p id="song-artist">Tia ft. OMIXX</p>
-        </div>
-        <div class="player-controls">
-            <!-- Thêm ID cho các nút -->
-            <i class="fas fa-backward-step" id="prev-btn"></i>
-            <i class="fas fa-pause" id="play-pause-btn"></i> <!-- Bắt đầu với icon pause -->
-            <i class="fas fa-forward-step" id="next-btn"></i>
-        </div>
-        <i class="fas fa-volume-high"></i> <!-- Phần volume sẽ làm sau nếu bạn muốn -->
-    </div>
 
-    <main class="page-wrapper">
-        <!-- <section class="projects-hero">
-            <div class="hero-background"></div>
-            <div class="container hero-container">
-                <div class="hero-text-content animate-on-scroll">
-                    <div class="welcome-badge">Portfolio Highlights</div>
-                    <h1 class="animate-on-scroll">
-                        My Creative<br>
-                        <span class="gradient-text">Journey</span>
-                    </h1>
-                    <p class="animate-on-scroll">A collection of web applications, experiments, and interactive tools built with passion and code.</p>
-                    <div class="hero-buttons">
-                        <a href="index.html" class="btn btn-secondary">
-                            <i class="fas fa-arrow-left"></i> Back to Home
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
-        <section id="projects" class="content-section">
-            <div class="section-header animate-on-scroll">
-                <div class="section-badge">Gallery</div>
-                <h2 class="section-title">All Projects</h2>
-                <div class="title-underline"></div>
-            </div>
-
-            <!-- Grid Container for Projects -->
+    <main>
+        <section class="content-section cs-page">
             <div class="container">
-                <div class="blog-grid">
+                <div class="section-header animate-on-scroll">
+                    <div class="section-badge">Research in detail</div>
+                    <h2 class="section-title">Projects &amp; Research</h2>
+                    <div class="title-underline"></div>
+                    <p class="cs-intro">Eight research papers in experimental quantum photonics, plasmonics and wave physics. Each one
+                        covers the question, the approach, the results and my part in it.</p>
+                </div>
 
-                    <!-- PROJECT 1: Omacha Shop -->
-                    <div class="blog-post-card glass-card animate-on-scroll">
-                        <div class="blog-card-image">
-                            <img src="assets/banner_omacha.png" alt="Omacha Homepage">
-                        </div>
-                        <div class="blog-card-content">
-                            <div class="blog-card-tags">
-                                <span>PHP</span><span>MySQL</span><span>Full-stack</span>
-                            </div>
-                            <h3>Omacha Shop E-Commerce</h3>
-                            <p>A comprehensive toy e-commerce platform designed for a fun shopping experience and
-                                powerful admin tools.</p>
-                            <div class="project-links">
-                                <a href="https://github.com/TranHuuDat2004/Omacha_Shop" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                                <a href="https://tranhuudat2004.github.io/Omacha-Shop-Demo/" target="_blank" aria-label="Live Demo"><i class="fas fa-link"></i></a>
-                            </div>
-                        </div>
+                <div class="cs-layout">
+                    <nav class="cs-nav" aria-label="Projects on this page">
+                        <p class="cs-nav-title">On this page</p>
+                        <a href="#plasmonic-metacrystals"><span class="cs-num">01</span> Plasmonic metacrystals</a>
+                        <a href="#hydrogen-sensing"><span class="cs-num">02</span> Quantum hydrogen sensing</a>
+                        <a href="#multiphoton-coherence"><span class="cs-num">03</span> Multiphoton quantum coherence</a>
+                        <a href="#photonix-coherence"><span class="cs-num">04</span> Classical and quantum coherence</a>
+                        <a href="#quantum-reservoir"><span class="cs-num">05</span> Quantum reservoirs</a>
+                        <a href="#quantum-imaging"><span class="cs-num">06</span> Imaging with natural light</a>
+                        <a href="#acoustic-non-hermitian"><span class="cs-num">07</span> Robust zero-energy states</a>
+                        <a href="#acoustic-filter"><span class="cs-num">08</span> Tunable acoustic filter</a>
+                    </nav>
+                    <div class="cs-articles">
+
+                <!-- ============ 01 ============ -->
+                <article id="plasmonic-metacrystals" class="case-study glass-card animate-on-scroll">
+                    <header class="cs-header">
+                        <p class="cs-eyebrow"><span class="cs-num">01</span> A material that sorts light by its quantum statistics</p>
+                        <h2>Quantum Statistical Plasmonic Metacrystals</h2>
+                        <p class="cs-meta"><span>Co-first author</span><span class="cs-meta-sep">&middot;</span><span>Quantum Photonics Group, LSU</span><span class="cs-meta-sep">&middot;</span><span><em>Nature</em> 655, 885&ndash;891 (2026)</span></p>
+                    </header>
+                    <dl class="cs-facts">
+                        <div><dt>Techniques</dt><dd>Photon-number-resolving detection &middot; quantum-state characterization &middot; confocal microscopy</dd></div>
+                        <div><dt>Modeling</dt><dd>ANSYS Lumerical FDTD electromagnetic simulations of the nanoantennas</dd></div>
+                        <div><dt>Recognition</dt><dd><a href="https://www.nature.com/articles/d41586-026-02038-x" target="_blank" rel="noopener"><em>Nature</em> News &amp; Views highlight</a> &middot; covered by <a href="https://phys.org/news/2026-07-physicists-room-temperature-quantum-material.html" target="_blank" rel="noopener">Phys.org</a>, <a href="https://www.sciencedaily.com/releases/2026/08/260806050706.htm" target="_blank" rel="noopener">ScienceDaily</a> and <a href="https://www.lsu.edu/science/news/2026/07/rt-quantum-material.php" target="_blank" rel="noopener">LSU News</a></dd></div>
+                    </dl>
+                    <div class="cs-body">
+                        <h3>The question</h3>
+                        <p>Metasurfaces can make large, complex optical systems more compact by building light control into the
+                            material. But most metasurfaces control wavelength, frequency, or spatial mode&mdash;not the quantum
+                            statistics of multiphoton light.</p>
+                        <p>In solar cells, scattering can trap light before it reaches the active layer, while added noise used
+                            to break that localization can cost energy. Because the quantum statistics of sunlight can affect
+                            how it propagates through a material, we asked: can we control those statistics to break localization
+                            without needing extra energy?</p>
+                        <h3>Approach</h3>
+                        <ul class="cs-list">
+                            <li>Designed metacrystals made of gold nanoantennas (&ldquo;meta-atoms&rdquo;) that couple light into
+                                surface plasmons, modeling their optical response with <b>Lumerical FDTD</b>.</li>
+                            <li>Sent multiphoton light with different statistics through the structures and measured the output
+                                with <b>photon-number-resolving detectors</b> and correlation measurements.</li>
+                            <li>Imaged the plasmonic fields and samples with <b>confocal microscopy</b> to connect geometry to the
+                                measured statistics.</li>
+                        </ul>
+                        <h3>Key results</h3>
+                        <ul class="cs-list cs-list--results">
+                            <li>The metacrystals show <b>allowed and forbidden &ldquo;statistical bands&rdquo;</b>: light whose
+                                statistics fall in an allowed band passes undistorted, while light in a forbidden band is suppressed
+                                or pushed to the nearest allowed state.</li>
+                            <li>The bands are set by the <b>size, number and orientation of the meta-atoms</b>, giving a
+                                deterministic way to engineer how quantum light is transported.</li>
+                            <li>Works at <b>room temperature</b>, pointing to coherence-sensitive photonic materials for scalable
+                                quantum technologies and energy harvesting.</li>
+                        </ul>
+                        <h3>My contribution</h3>
+                        <p>Co-first author. I helped design and carry out the experiments, ran the FDTD modeling of the
+                            plasmonic structures, implemented the photon-number-resolving measurements and confocal microscopy, and
+                            analyzed the data with the team. I also contributed to developing the original idea.</p>
                     </div>
-
-                    <!-- PROJECT 2: BrickShop -->
-                    <div class="blog-post-card glass-card animate-on-scroll">
-                        <div class="blog-card-image">
-                            <img src="assets/banner_brickshop.png" alt="BrickShop Homepage">
-                        </div>
-                        <div class="blog-card-content">
-                            <div class="blog-card-tags">
-                                <span>Node.js</span><span>Express.js</span><span>TailwindCSS</span>
-                            </div>
-                            <h3>BrickShop E-Commerce</h3>
-                            <p>A modern e-commerce hub for building block fans, developed with Node.js and a Tailwind
-                                CSS admin UI.</p>
-                            <div class="project-links">
-                                <a href="https://github.com/TranHuuDat2004/BrickShop" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                                <a href="#" aria-label="Project Details"><i class="fas fa-link"></i></a>
-                            </div>
-                        </div>
+                    <div class="cs-figures">
+                        <figure class="cs-figure">
+                            <button class="cs-zoom" type="button" aria-label="Enlarge figure">
+                                <img src="assets/figures/metacrystal_fig1.jpg" alt="Concept of the quantum statistical plasmonic metacrystal, the experimental setup, and an electron micrograph of the device." loading="lazy">
+                            </button>
+                            <figcaption>(a) The metacrystal passes or blocks multiphoton light depending on its degree of coherence. (b) Experimental setup with photon-number-resolving (PNR) detectors. (c) Micrograph of the coupling grating and metacrystal. Adapted from You, Dawkins, Ferdous <i>et al.</i>, <i>Nature</i> (2026), CC BY 4.0. Click to enlarge.</figcaption>
+                        </figure>
                     </div>
-
-                    <!-- PROJECT 3: ZStyle -->
-                    <div class="blog-post-card glass-card animate-on-scroll">
-                        <div class="blog-card-image">
-                            <img src="assets/banner_zstyle.png" alt="ZStyle Homepage">
-                        </div>
-                        <div class="blog-card-content">
-                            <div class="blog-card-tags">
-                                <span>PHP</span><span>MySQL</span><span>Frontend</span>
-                            </div>
-                            <h3>ZStyle Fashion E-Commerce</h3>
-                            <p>Developed a basic clothing e-commerce website as part of a course project, implementing
-                                core features.</p>
-                            <div class="project-links">
-                                <a href="https://github.com/TranHuuDat2004/ZStyle" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
+                    <div class="cs-links">
+                        <a class="cs-link" href="https://doi.org/10.1038/s41586-026-10782-3" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i> Read the paper (open access)</a>
+                        <a class="cs-link" href="https://www.nature.com/articles/d41586-026-02038-x" target="_blank" rel="noopener"><i class="fas fa-newspaper"></i> Nature News &amp; Views</a>
+                        <a class="cs-link" href="https://phys.org/news/2026-07-physicists-room-temperature-quantum-material.html" target="_blank" rel="noopener"><i class="fas fa-newspaper"></i> Phys.org</a>
+                        <a class="cs-link" href="https://www.lsu.edu/science/news/2026/07/rt-quantum-material.php" target="_blank" rel="noopener"><i class="fas fa-newspaper"></i> LSU News</a>
                     </div>
+                </article>
 
-                    <!-- PROJECT 4: Unidoc -->
-                    <div class="blog-post-card glass-card animate-on-scroll">
-                        <div class="blog-card-image">
-                            <img src="assets/banner_unidoc.png" alt="Unidoc Homepage">
-                        </div>
-                        <div class="blog-card-content">
-                            <div class="blog-card-tags">
-                                <span>React</span><span>Tailwind CSS</span><span>Firebase</span>
-                            </div>
-                            <h3>Unidoc Document Hub</h3>
-                            <p>A comprehensive document hub designed to help university students easily manage, find,
-                                and share their study materials.</p>
-                            <div class="project-links">
-                                <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                                <a href="#" aria-label="Live Demo"><i class="fas fa-link"></i></a>
-                            </div>
-                        </div>
+                <!-- ============ 02 ============ -->
+                <article id="hydrogen-sensing" class="case-study glass-card animate-on-scroll">
+                    <header class="cs-header">
+                        <p class="cs-eyebrow"><span class="cs-num">02</span> Detecting hydrogen faster with quantum light</p>
+                        <h2>Scalable Quantum Sensing with Robust Multiparticle Plasmonic Systems</h2>
+                        <p class="cs-meta"><span>First author</span><span class="cs-meta-sep">&middot;</span><span>LSU Physics &amp; Chemical Engineering</span><span class="cs-meta-sep">&middot;</span><span><em>Nature Communications</em>, accepted in principle (2026)</span></p>
+                    </header>
+                    <dl class="cs-facts">
+                        <div><dt>Platform</dt><dd>Gold/palladium plasmonic nanoslit sensor in a gas cell, read out with photon-number-resolving detectors</dd></div>
+                        <div><dt>Tools</dt><dd>LabVIEW-synchronized acquisition &middot; hydrogen calibration &middot; Lumerical FDTD &middot; Fisher-information analysis</dd></div>
+                        <div><dt>Result</dt><dd>~100&times; faster detection and ~46&times; lower detection limit than the classical readout</dd></div>
+                    </dl>
+                    <div class="cs-body">
+                        <h3>The question</h3>
+                        <p>Quantum-enhanced plasmonic sensing could improve measurements in biosensing and chemical detection, but
+                            many approaches rely on squeezed or entangled light sources that are complex and costly to generate.
+                            Could classical thermal light be transformed into a multiphoton state that behaves quantum mechanically,
+                            bringing quantum-sensing benefits to a simpler setup? We test this idea with hydrogen, where leaks must
+                            be detected quickly and at low concentrations.</p>
+                        <h3>Approach</h3>
+                        <ul class="cs-list">
+                            <li>Built a sensor in which multiparticle plasmons in a multimode nanoslit probe a palladium film; hydrogen
+                                turns palladium into palladium hydride and slightly reshapes the plasmonic modes.</li>
+                            <li>Read out the light with <b>photon-number-resolving detectors</b> and extracted multiparticle
+                                subsystems of up to thirty particles from the measured photon statistics.</li>
+                            <li>Developed the <b>hydrogen calibration</b> procedure and <b>LabVIEW</b> data acquisition, and used
+                                <b>Fisher information</b> to compare quantum and classical readouts taken from the same data.</li>
+                        </ul>
+                        <h3>Key results</h3>
+                        <ul class="cs-list cs-list--results">
+                            <li>Quantum enhancement that <b>grows exponentially with the number of extracted particles</b>, even
+                                under substantial noise and loss.</li>
+                            <li><b>~100&times; faster</b> hydrogen detection (more than two orders of magnitude) and a
+                                <b>~46&times; lower detection limit</b> than the classical protocol.</li>
+                            <li>The protocol is general and can be applied to other plasmonic sensing platforms.</li>
+                        </ul>
+                        <h3>My contribution</h3>
+                        <p>First author. I performed the simulations, built the optical setup, ran the experiments, analyzed the
+                            data, and contributed to sample fabrication and to writing the paper, working with collaborators in
+                            LSU&rsquo;s Department of Chemical Engineering on the gold and palladium films.</p>
                     </div>
-
-                    <!-- PROJECT 5: Aptis Practice -->
-                    <div class="blog-post-card glass-card animate-on-scroll">
-                        <div class="blog-card-image">
-                            <img src="assets/banner_Aptis.png" alt="Aptis Practice UI">
-                        </div>
-                        <div class="blog-card-content">
-                            <div class="blog-card-tags">
-                                <span>HTML5</span><span>CSS3</span><span>JS</span>
-                            </div>
-                            <h3>Aptis Practice Testing Tool</h3>
-                            <p>An interactive web tool built to solve a personal problem after a first attempt at the
-                                Aptis test.</p>
-                            <div class="project-links">
-                                <a href="https://github.com/TranHuuDat2004/aptis-practice" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                                <a href="https://tranhuudat2004.github.io/aptis-practice/" target="_blank" aria-label="Live Demo"><i class="fas fa-link"></i></a>
-                                <a href="https://www.figma.com/community/file/1622808499508850540/aptis-e-learning-exam-practice-platform-ui-aptis-practice" 
-                                    target="_blank" aria-label="Figma Design"><i class="fab fa-figma"></i></a>
-                            </div>
-                        </div>
+                    <div class="cs-figures">
+                        <figure class="cs-figure">
+                            <button class="cs-zoom" type="button" aria-label="Enlarge figure">
+                                <img src="assets/figures/hydrogen_fig1.jpg" alt="Plasmonic hydrogen sensor schematic, measured joint photon-number distribution, and the full experimental setup." loading="lazy">
+                            </button>
+                            <figcaption>(a) Reference and sensing multiparticle plasmons in the nanoslit sensor. (b) Measured joint photon-number distribution of the input light. (c) Setup: multiphoton input, plasmonic gas sensing and multiphoton characterization. Click to enlarge.</figcaption>
+                        </figure>
                     </div>
-
-                    <!-- PROJECT 6: Puzzle & Image Tools -->
-                    <div class="blog-post-card glass-card animate-on-scroll">
-                        <div class="blog-card-image">
-                            <img src="assets/home_game_tool.png" alt="Puzzle & Image Tools UI">
-                        </div>
-                        <div class="blog-card-content">
-                            <div class="blog-card-tags">
-                                <span>HTML5</span><span>CSS3</span><span>JS</span>
-                            </div>
-                            <h3>Puzzle & Image Tools Suite</h3>
-                            <p>An engaging web application that includes an interactive puzzle game and practical image
-                                processing tools.</p>
-                            <div class="project-links">
-                                <a href="https://tranhuudat2004.github.io/games_tools/" target="_blank" aria-label="Live Demo"><i class="fas fa-link"></i></a>
-                            </div>
-                        </div>
+                    <div class="cs-links">
+                        <span class="cs-link cs-link--muted"><i class="fas fa-hourglass-half"></i> Accepted in principle at <em>Nature Communications</em> &middot; link will be added after publication</span>
+                        <a class="cs-link" href="https://ieeexplore.ieee.org/abstract/document/11151427" target="_blank" rel="noopener"><i class="fas fa-microphone"></i> IEEE RAPID 2025 talk</a>
                     </div>
+                </article>
 
-                    <!-- PROJECT 7: Signature Verification -->
-                    <div class="blog-post-card glass-card animate-on-scroll">
-                        <div class="blog-card-image">
-                            <img src="assets/home_handwriting.png" alt="Signature Verification Concept">
-                        </div>
-                        <div class="blog-card-content">
-                            <div class="blog-card-tags">
-                                <span>Python</span><span>TensorFlow</span><span>Keras</span>
-                            </div>
-                            <h3>Signature Verification</h3>
-                            <p>Developed a model to verify handwritten signatures using Machine Learning techniques in
-                                Google Colab.</p>
-                            <div class="project-links">
-                                <a href="https://github.com/TranHuuDat2004/handwriting-signature-recognition" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
+                <!-- ============ 03 ============ -->
+                <article id="multiphoton-coherence" class="case-study glass-card animate-on-scroll">
+                    <header class="cs-header">
+                        <p class="cs-eyebrow"><span class="cs-num">03</span> Quantum coherence that appears as light travels</p>
+                        <h2>Emergence of Multiphoton Quantum Coherence by Light Propagation</h2>
+                        <p class="cs-meta"><span>First author</span><span class="cs-meta-sep">&middot;</span><span>Quantum Photonics Group, LSU</span><span class="cs-meta-sep">&middot;</span><span><em>ACS Photonics</em> 11, 3197&ndash;3204 (2024)</span></p>
+                    </header>
+                    <dl class="cs-facts">
+                        <div><dt>Techniques</dt><dd>Polarization quantum-state tomography &middot; SLM polarization gratings &middot; SNSPD photon-number resolution</dd></div>
+                        <div><dt>Analysis</dt><dd>Python density-matrix reconstruction &middot; MATLAB &middot; Mathematica</dd></div>
+                        <div><dt>Presentation</dt><dd>LAOP 2024 talk</dd></div>
+                    </dl>
+                    <div class="cs-body">
+                        <h3>The question</h3>
+                        <p>The quantum character of light is usually thought to be fixed by its source, and to change only when
+                            light interacts with matter. Can the quantum coherence of a multiphoton field change simply as it
+                            travels through free space?</p>
+                        <h3>Approach</h3>
+                        <ul class="cs-list">
+                            <li>Scattered thermal multiphoton light off a polarization grating displayed on a <b>spatial light
+                                modulator</b>.</li>
+                            <li>Used a tunable telescope to select different propagation planes and performed
+                                <b>polarization tomography</b> with superconducting nanowire photon-number-resolving detectors.</li>
+                            <li>Reconstructed density matrices in Python and compared with theory developed in MATLAB and Mathematica.</li>
+                        </ul>
+                        <h3>Key results</h3>
+                        <ul class="cs-list cs-list--results">
+                            <li>The quantum coherence of the multiphoton field <b>changes upon free-space propagation</b>, without
+                                any light&ndash;matter interaction.</li>
+                            <li>Scattering can produce multiphoton subsystems with <b>sub-shot-noise</b> properties from thermal light.</li>
+                            <li>The observations are explained by a <b>nonclassical version of the van Cittert&ndash;Zernike theorem</b>.</li>
+                        </ul>
+                        <h3>My contribution</h3>
+                        <p>First author. I led the experiment, performed the polarization tomography and photon-number-resolving
+                            measurements, reconstructed the density matrices, and carried out the theoretical analysis with the team.</p>
+                    </div>
+                    <div class="cs-figures">
+                        <figure class="cs-figure">
+                            <button class="cs-zoom" type="button" aria-label="Enlarge figure">
+                                <img src="assets/figures/coherence_fig1.jpg" alt="Concept of multiphoton coherence modified by propagation and the experimental setup with SLM, telescope and PNR detectors." loading="lazy">
+                            </button>
+                            <figcaption>(a) Thermal multiphoton wavepackets scattered by an optical grating change their photon statistics as they propagate. (b) Experimental setup. From Ferdous <i>et al.</i>, <i>ACS Photonics</i> 11, 3197 (2024). Click to enlarge.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="cs-links">
+                        <a class="cs-link" href="https://doi.org/10.1021/acsphotonics.4c00558" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i> Read the paper</a>
+                        <a class="cs-link" href="https://doi.org/10.1186/s43074-024-00153-4" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i> PhotoniX companion paper</a>
+                        <a class="cs-link" href="https://opg.optica.org/abstract.cfm?uri=LAOP-2024-M3B.4" target="_blank" rel="noopener"><i class="fas fa-microphone"></i> LAOP 2024 talk</a>
+                    </div>
+                </article>
+
+                <!-- ============ 04 ============ -->
+                <article id="photonix-coherence" class="case-study glass-card animate-on-scroll">
+                    <header class="cs-header">
+                        <p class="cs-eyebrow"><span class="cs-num">04</span> Separating classical and quantum coherence</p>
+                        <h2>Isolating the Classical and Quantum Coherence of a Multiphoton System</h2>
+                        <p class="cs-meta"><span>Co-author, <em>PhotoniX</em> 5, 39 (2024)</span><span class="cs-meta-sep">&middot;</span><span>Quantum Photonics Group, LSU</span></p>
+                    </header>
+                    <dl class="cs-facts">
+                        <div><dt>Light source</dt><dd>Pseudothermal light with classical statistics</dd></div>
+                        <div><dt>System size</dt><dd>Isolated multiphoton subsystems of up to 40 photons</dd></div>
+                        <div><dt>Methods</dt><dd>Orbital angular momentum (OAM) projections &middot; photon-number-resolving detection &middot; correlation measurements</dd></div>
+                    </dl>
+                    <div class="cs-body">
+                        <h3>The question</h3>
+                        <p>Can a classical pseudothermal light field contain isolated multiphoton subsystems with their own quantum coherence and dynamics?</p>
+                        <h3>Approach</h3>
+                        <ul class="cs-list">
+                            <li>Generated a pseudothermal optical field and projected it into selected OAM modes using angular double slits and spatial light modulators.</li>
+                            <li>Used photon-number-resolving measurements and correlation analysis to isolate and characterize multiphoton subsystems.</li>
+                        </ul>
+                        <h3>Key results</h3>
+                        <ul class="cs-list cs-list--results">
+                            <li>Isolated multiphoton subsystems with up to <b>40 photons</b> from a classical thermal field.</li>
+                            <li>Found that while most subsystems exhibit classical coherence, some show <b>quantum coherence</b> and distinct multiparticle interference patterns.</li>
+                            <li>Showed how OAM correlations and the coherence of each subsystem shape its observed dynamics.</li>
+                        </ul>
+                        <h3>My contribution</h3>
+                        <p>Co-author. I contributed to the experimental study of the isolated multiphoton subsystems and their classical and quantum coherence properties.</p>
+                    </div>
+                    <div class="cs-figures">
+                        <figure class="cs-figure">
+                            <button class="cs-zoom" type="button" aria-label="Enlarge figure">
+                                <img src="assets/figures/photonix_coherence_fig1.jpg" alt="Measured spatial structures of multiphoton subsystems, photon-number and OAM correlations, and experimental setup" loading="lazy">
+                            </button>
+                            <figcaption>Measured spatial profiles and correlations of multiphoton subsystems, with the experimental setup used to isolate and characterize them. From You <i>et al.</i>, <i>PhotoniX</i> 5, 39 (2024).</figcaption>
+                        </figure>
+                    </div>
+                    <div class="cs-links">
+                        <a class="cs-link" href="https://doi.org/10.1186/s43074-024-00153-4" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i> Read the paper (open access)</a>
+                    </div>
+                </article>
+
+                <!-- ============ 05 ============ -->
+                <article id="quantum-reservoir" class="case-study glass-card animate-on-scroll">
+                    <header class="cs-header">
+                        <p class="cs-eyebrow"><span class="cs-num">05</span> Computing with many photons at room temperature</p>
+                        <h2>Multiphoton Quantum Reservoirs for Robust Multidimensional Computing</h2>
+                        <p class="cs-meta"><span>Co-author, <em>Advanced Science</em> (2026)</span><span class="cs-meta-sep">&middot;</span><span>Published research</span><span class="cs-meta-sep">&middot;</span><span>Quantum Photonics Group, LSU</span></p>
+                    </header>
+                    <dl class="cs-facts">
+                        <div><dt>Degrees of freedom</dt><dd>Photon number &middot; orbital angular momentum (OAM) &middot; polarization</dd></div>
+                        <div><dt>Hardware</dt><dd>Spatial light modulators &middot; q-plates &middot; APD-based photon-number resolution with a time tagger</dd></div>
+                        <div><dt>Scale</dt><dd>Up to forty-particle systems in a reservoir of 861 components</dd></div>
+                    </dl>
+                    <div class="cs-body">
+                        <h3>The question</h3>
+                        <p>Quantum information processing usually needs fragile quantum light sources and very low noise. Reservoir
+                            computing instead uses a complex, fixed network and trains only the readout. Can a multiphoton
+                            optical reservoir built from ordinary classical light still show quantum advantages at room
+                            temperature, despite noise and loss?</p>
+                        <h3>Approach</h3>
+                        <ul class="cs-list">
+                            <li>Inject classical light into a five-step photonic circuit of half-wave plates, q-plates and quarter-wave
+                                plates that couples polarization and <b>OAM</b>.</li>
+                            <li>Measure the output in both the OAM basis (with <b>SLMs</b>) and the photon-number basis (with
+                                <b>APDs and a time tagger</b>), and use projective measurements to extract multiphoton quantum
+                                subsystems from the classical field.</li>
+                        </ul>
+                        <h3>Key results</h3>
+                        <ul class="cs-list cs-list--results">
+                            <li>Quantum random walks that stay <b>ballistic despite noise</b>, recovered by projecting onto
+                                higher photon-number components.</li>
+                            <li>Simulations of <b>bosonic and fermionic</b> many-body dynamics and of thermalization in synthetic
+                                lattices, plus quantum prediction of mathematical functions.</li>
+                        </ul>
+                        <h3>My contribution</h3>
+                        <p>Co-author on the published <em>Advanced Science</em> study of multiphoton quantum reservoirs for robust,
+                            multidimensional information processing.</p>
+                    </div>
+                    <div class="cs-figures">
+                        <figure class="cs-figure">
+                            <button class="cs-zoom" type="button" aria-label="Enlarge figure">
+                                <img src="assets/figures/reservoir_fig1.jpg" alt="Multiphoton quantum reservoir concept, experimental setup, the five-step photonic circuit and the measured photon-number distribution." loading="lazy">
+                            </button>
+                            <figcaption>(a) Multiphoton reservoir built on photon number, OAM and polarization. (b) Setup. (c) Five-step photonic circuit. (d) Measured joint photon-number distribution. Adapted from Hong <i>et al.</i>, <i>Advanced Science</i> (2026), CC BY. Click to enlarge.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="cs-links">
+                        <a class="cs-link" href="https://doi.org/10.1002/advs.77225" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i> Read the paper (open access)</a>
+                        <span class="cs-link cs-link--muted"><i class="fas fa-flask"></i> Plasmonic reservoir: ongoing</span>
+                    </div>
+                </article>
+
+                <!-- ============ 06 ============ -->
+                <article id="quantum-imaging" class="case-study glass-card animate-on-scroll">
+                    <header class="cs-header">
+                        <p class="cs-eyebrow"><span class="cs-num">06</span> Quantum imaging with natural light</p>
+                        <h2>Multiphoton Quantum Imaging Using Natural Light</h2>
+                        <p class="cs-meta"><span>Co-author</span><span class="cs-meta-sep">&middot;</span><span>Quantum Photonics Group, LSU</span><span class="cs-meta-sep">&middot;</span><span><em>Applied Physics Reviews</em> 12, 011424 (2025)</span></p>
+                    </header>
+                    <dl class="cs-facts">
+                        <div><dt>Camera</dt><dd>Single-pixel camera with a digital micromirror device (DMD) and two PNR detectors</dd></div>
+                        <div><dt>Methods</dt><dd>Compressive sensing &middot; conditional photon-number detection &middot; raster scanning</dd></div>
+                        <div><dt>Light source</dt><dd>Thermal (&ldquo;natural&rdquo;) light, no fragile quantum source needed</dd></div>
+                    </dl>
+                    <div class="cs-body">
+                        <h3>The question</h3>
+                        <p>Quantum imaging can beat classical limits, but it usually relies on dim, fragile sources of quantum
+                            light that are easily swamped by background noise. Can ordinary thermal light be used instead?</p>
+                        <h3>Approach &amp; results</h3>
+                        <ul class="cs-list">
+                            <li>Light scattered by an object is projected onto random binary patterns on a <b>DMD</b> and counted
+                                with <b>photon-number-resolving detectors</b>.</li>
+                            <li>Conditioning on photon number isolates multiphoton subsystems and gives an <b>exponential enhancement
+                                in image contrast</b>.</li>
+                            <li>The scheme recovers images of objects that are <b>completely hidden by noise</b> in the classical
+                                image.</li>
+                        </ul>
+                        <h3>My contribution</h3>
+                        <p>I contributed to the experimental development and data collection, including raster-scanning
+                            measurements for high-contrast image reconstruction under strong background noise.</p>
+                    </div>
+                    <div class="cs-figures">
+                        <figure class="cs-figure">
+                            <button class="cs-zoom" type="button" aria-label="Enlarge figure">
+                                <img src="assets/figures/imaging_fig1.jpg" alt="Single-pixel quantum camera using natural light and the extracted quantum images." loading="lazy">
+                            </button>
+                            <figcaption>(a) Single-pixel quantum camera using natural light. (b) Measured photon-number distribution. (c) A noisy classical image and the quantum images extracted from it. From Mostafavi <i>et al.</i>, <i>Appl. Phys. Rev.</i> 12, 011424 (2025). Click to enlarge.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="cs-links">
+                        <a class="cs-link" href="https://doi.org/10.1063/5.0234062" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i> Read the paper</a>
+                    </div>
+                </article>
+
+                <!-- ============ 07 ============ -->
+                <article id="acoustic-non-hermitian" class="case-study glass-card animate-on-scroll">
+                    <header class="cs-header">
+                        <p class="cs-eyebrow"><span class="cs-num">07</span> Robust states in a lossy acoustic waveguide</p>
+                        <h2>Observation of Robust Zero-Energy Extended States</h2>
+                        <p class="cs-meta"><span>First author, <em>Physical Review Applied</em> 19, L061002 (2023)</span><span class="cs-meta-sep">&middot;</span><span>University of Texas Rio Grande Valley</span></p>
+                    </header>
+                    <dl class="cs-facts">
+                        <div><dt>System</dt><dd>Lossy acoustic waveguide with 17 coupled resonators</dd></div>
+                        <div><dt>Tools</dt><dd>COMSOL Multiphysics &middot; 3D printing &middot; microphones and network analyzer in an anechoic chamber</dd></div>
+                        <div><dt>Measurement</dt><dd>Transmission response under controlled structural disorder</dd></div>
+                    </dl>
+                    <div class="cs-body">
+                        <h3>The question</h3>
+                        <p>Can a carefully engineered lossy acoustic system host an extended bulk state that remains stable even when
+                            the structure is imperfect?</p>
+                        <h3>Approach</h3>
+                        <ul class="cs-list">
+                            <li>Modeled and built a 3D-printed acoustic waveguide made from 17 coupled resonators.</li>
+                            <li>Introduced controlled disorder and measured the transmission response, comparing the observations with COMSOL simulations.</li>
+                        </ul>
+                        <h3>Key results</h3>
+                        <ul class="cs-list cs-list--results">
+                            <li>Observed an extended bulk state near <b>257&nbsp;Hz</b> whose frequency shifted by only <b>~0.35&nbsp;Hz</b> under 10% random disorder.</li>
+                            <li>Other resonances shifted by about 1.5&nbsp;Hz under the same disorder, making this state more than <b>4&times; more robust</b>.</li>
+                        </ul>
+                        <h3>My contribution</h3>
+                        <p>First author. I carried out the theoretical and experimental work, including COMSOL modeling, waveguide
+                            characterization, controlled-disorder experiments and transmission analysis.</p>
+                    </div>
+                    <div class="cs-figures">
+                        <figure class="cs-figure">
+                            <button class="cs-zoom" type="button" aria-label="Enlarge figure">
+                                <img src="assets/figures/zero_energy_fig3.jpg" alt="Band structure of the acoustic waveguide and the mode profile of the robust bulk state." loading="lazy">
+                            </button>
+                            <figcaption>Band structure of the acoustic waveguide (a) and mode profile of the robust extended state near 257&nbsp;Hz (b). From Ferdous <i>et al.</i>, <i>Phys. Rev. Applied</i> 19, L061002 (2023).</figcaption>
+                        </figure>
+                    </div>
+                    <div class="cs-links">
+                        <a class="cs-link" href="https://doi.org/10.1103/PhysRevApplied.19.L061002" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i> Read the paper</a>
+                    </div>
+                </article>
+
+                <!-- ============ 08 ============ -->
+                <article id="acoustic-filter" class="case-study glass-card animate-on-scroll">
+                    <header class="cs-header">
+                        <p class="cs-eyebrow"><span class="cs-num">08</span> Filtering sound with engineered loss</p>
+                        <h2>Tunable Non-Hermitian Acoustic Filter</h2>
+                        <p class="cs-meta"><span>Co-first author, <em>Physical Review Applied</em> 16, 014012 (2021)</span><span class="cs-meta-sep">&middot;</span><span>University of Texas Rio Grande Valley</span></p>
+                    </header>
+                    <dl class="cs-facts">
+                        <div><dt>Structure</dt><dd>3D-printed superlattice of coupled hollow cuboid resonators</dd></div>
+                        <div><dt>Tools</dt><dd>COMSOL Multiphysics &middot; 3D printing &middot; microphones and network analyzer</dd></div>
+                        <div><dt>Control</dt><dd>Engineered loss in one sublattice tunes absorption and reflection by frequency</dd></div>
+                    </dl>
+                    <div class="cs-body">
+                        <h3>The question</h3>
+                        <p>Can engineered loss turn an acoustic waveguide into a tunable filter that selectively absorbs or reflects chosen frequencies?</p>
+                        <h3>Approach &amp; results</h3>
+                        <ul class="cs-list cs-list--results">
+                            <li>Designed and 3D-printed a non-Hermitian acoustic superlattice of hollow cuboids.</li>
+                            <li>Adding loss to one sublattice creates absorption resonances, allowing selected frequencies to be absorbed or reflected.</li>
+                            <li>Experimental measurements agreed with COMSOL simulations.</li>
+                        </ul>
+                        <h3>My contribution</h3>
+                        <p>Co-first author. I collected the experimental data and verified the results against COMSOL simulations.</p>
+                    </div>
+                    <div class="cs-figures">
+                        <figure class="cs-figure">
+                            <button class="cs-zoom" type="button" aria-label="Enlarge figure">
+                                <img src="assets/figures/acoustic_filter_fig3.jpg" alt="Schematic of the non-Hermitian acoustic superlattice and its reflection spectrum." loading="lazy">
+                            </button>
+                            <figcaption>Model of the lossy acoustic superlattice (a) and its reflection spectrum (b). From Puri, Ferdous <i>et al.</i>, <i>Phys. Rev. Applied</i> 16, 014012 (2021).</figcaption>
+                        </figure>
+                    </div>
+                    <div class="cs-links">
+                        <a class="cs-link" href="https://doi.org/10.1103/PhysRevApplied.16.014012" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i> Read the paper</a>
+                    </div>
+                </article>
                     </div>
                 </div>
-                <div class="hero-buttons">
-                    <a href="index.html" class="btn btn-secondary">
-                        <i class="fas fa-arrow-left"></i> Back to Home
-                    </a>
+
+                <div class="view-all-posts-container animate-on-scroll" style="margin-top: 3rem;">
+                    <a href="index.html#projects" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Back to home</a>
                 </div>
             </div>
-            
         </section>
     </main>
 
-    <footer id="footer-placeholder" class="main-footer"></footer>
+    <div class="cs-lightbox" hidden>
+        <button class="cs-lightbox-close" type="button" aria-label="Close">&times;</button>
+        <img src="" alt="">
+    </div>
 
-    <audio id="audio-source"></audio>
-    <script src="js/playlist.js"></script>
-    <script src="js/load-components.js"></script>
-    <script src="js/scripts.js"></script>
+    <footer id="footer-placeholder" class="main-footer"></footer>
+    <script src="static/js/scripts.js"></script>
+    <script src="static/js/load-components.js"></script>
+    <script>
+        // Highlight the current project in the side menu
+        (function () {
+            const links = [...document.querySelectorAll('.cs-nav a')];
+            const byId = Object.fromEntries(links.map(a => [a.getAttribute('href').slice(1), a]));
+            const obs = new IntersectionObserver(entries => {
+                entries.forEach(e => {
+                    if (e.isIntersecting) {
+                        links.forEach(a => a.classList.remove('active'));
+                        const a = byId[e.target.id];
+                        if (a) {
+                            a.classList.add('active');
+                            a.scrollIntoView({ block: 'nearest', inline: 'center' });
+                        }
+                    }
+                });
+            }, { rootMargin: '-35% 0px -60% 0px' });
+            document.querySelectorAll('.case-study').forEach(s => obs.observe(s));
+
+            // Click a figure to enlarge it
+            const box = document.querySelector('.cs-lightbox');
+            const boxImg = box.querySelector('img');
+            const close = () => { box.hidden = true; document.body.style.overflow = ''; };
+            document.querySelectorAll('.cs-zoom').forEach(btn => btn.addEventListener('click', () => {
+                const img = btn.querySelector('img');
+                boxImg.src = img.src; boxImg.alt = img.alt;
+                box.hidden = false; document.body.style.overflow = 'hidden';
+            }));
+            box.addEventListener('click', e => { if (e.target !== boxImg) close(); });
+            document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
+        })();
+    </script>
 </body>
 
 </html>
