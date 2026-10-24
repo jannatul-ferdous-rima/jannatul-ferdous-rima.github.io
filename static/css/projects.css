@@ -364,3 +364,15 @@
     background-position: center 46%;
     background-repeat: no-repeat;
 }
+
+
+/* Photonic waveguide image transition between About and Projects. */
+.background-transition {
+    height: clamp(10rem, 22vw, 18rem);
+    background-image:
+        linear-gradient(to bottom, #121212 0%, rgba(18, 18, 18, 0.08) 28%, rgba(18, 18, 18, 0.08) 72%, #121212 100%),
+        url('../../assets/photonic_waveguide_transition.png');
+    background-size: cover;
+    background-position: center 52%;
+    background-repeat: no-repeat;
+}
