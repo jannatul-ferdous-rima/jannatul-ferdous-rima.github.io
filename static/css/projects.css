@@ -355,3 +355,11 @@
         width: 100%;
     }
 }
+
+/* Dark photonic-chip backdrop for the research section following About Me. */
+#projects {
+    background-image: linear-gradient(90deg, rgba(18, 18, 18, 0.88), rgba(18, 18, 18, 0.76)), url('../../assets/chip_background_magical.png');
+    background-size: 100% auto;
+    background-position: center 46%;
+    background-repeat: no-repeat;
+}
